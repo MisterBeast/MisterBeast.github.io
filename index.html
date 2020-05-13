@@ -143,7 +143,7 @@
 
 	<br><br>
 	<fontHeading><center>First Understandable</center></fontHeading>
-	<font0>I practice redundancy throughout this book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. I hope this programming book will be easily understandable for everyone from 8 year old.
+	<font0>I practice redundancy throughout this book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope this programming book will be easily understandable for everyone from 8 year old.
 	<br><br>
 	<center>
 <img src="joy.png" width= 300px>
@@ -202,10 +202,10 @@
 
 	<fontHeading><center>Fast start</center></fontHeading>
 	<font0>
-	When we make a machine do what has been written in our code it is called that <b>we are running the code</b>. Just like the rider running the horse.
+	When we are making a machine do what has been written in our code it is called that <b>we are running the code</b>. Just like the rider running the horse.
 	<br><br>
 	<center>
-<img src="running.png" width="50%">
+<img src="running.png" width= 400px>
 	</center>
 	<br>
 	We can conveniently write, edit and run codes in special environments called codeEditors:
@@ -216,14 +216,14 @@
 	<br>
 	So suppose we have the following code:
 	</b><br><br>
-	<center>
+<center>
 <table>
 <!-- 1st Heading row--> 
 	<tr>
 	<td>&nbsp</td>
-    <td><b>Code&nbspin&nbspKotlin:</b></td>
-    <td>&nbsp</td>
-    <td><b>Code&nbspin&nbspSwift:</b></td>
+    <td><a style="color: #aaaaaa">Code&nbspin&nbspKotlin&nbspis&nbspbelow:</a></td>
+    <td></td>
+    <td><a style="color: #aaaaaa">Code&nbspin&nbspSwift&nbspis&nbspbelow:</a></td>
     <td>&nbsp</td>
     </tr>
 <!-- 2nd empty row-->   
@@ -240,14 +240,14 @@
     <td>fun&nbspmain()&nbsp&nbsp{<br>&nbsp&nbsp&nbsp&nbspprint(5)<br>
     }
 	</td>
-    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <td><pre>          </pre>
     </td>
     <td>print(5)<br>&nbsp<br>&nbsp
     </td>
     <td>&nbsp</td>
 	</tr>
 </table>
-	</center>
+</center>
 	<br>	
 	Please, don’t worry about the code so far. Also, don’t worry about why there is the <b>fun main()</b> part in Kotlin's code and there is not the same part in Swift's code. Don’t worry about these things so far.
 	<br><br>	
@@ -299,8 +299,32 @@
 	<br><br>
 	Great!
 	<br><br>
-	It is worth to note that any code is just a plain text. So you can write your code on a piece of paper or in any text editor you know (e.g. Notepad or Brackets), and just later you might put this code into  a codeEditor for running. It is so since any code, as said above, is just a plain text.
+	Any code is only created to get the result we want while running the code. Sometimes, the result may be just some text (numbers, letters), but sometimes the result may be some <b>physical actions</b> (e.g. lefting a load) that the machine (robot) also may do.
 	<br><br>
+	<center>
+<img src="robot.png" height= 350px>
+	</center>
+	<br> 
+	It is worth to note that any code is just a plain text. So you can write your code on a piece of paper or in any text editor you know (e.g. Notepad or Brackets), and just later you might put this code into  a codeEditor for running. It is so since any code, as said above, is just a plain text:
+	</b><br><br>
+	<center>
+<table>
+
+<!-- One single code row-->
+    <tr>
+  	<td>&nbsp</td>
+    <td>fun&nbspmain()&nbsp&nbsp{<br>&nbsp&nbsp&nbsp&nbspprint(5)<br>
+    }
+	</td>
+    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </td>
+    <td>print(5)<br>&nbsp<br>&nbsp
+    </td>
+    <td>&nbsp</td>
+	</tr>
+</table>
+	</center>
+	<br>
 	</font0>
 
 	<fontHeading><center>Commanders</center></fontHeading>
@@ -313,7 +337,7 @@
 	<br>
 	But how, exactly, should codes be arranged inside?
 	<br><br>
-	Right now, we will learn that.
+	Right now, we will get that.
 	<br><br>
 	In programming, we command the machine only by Commanders:
 	<br><br>
@@ -321,7 +345,7 @@
 <img src="commanders.png" width="70%">
 	</center>
 	<br>
-    So it is the Commanders that make the machine do the works that we want. They are like our helpers.
+    So it is namely the Commanders that make the machine do the works that we want. They are our helpers.
 	<br><br>
 	Interestingly, these Commanders (our helpers) exist only in the mind of the machine: 
 	<br><br>
@@ -333,7 +357,7 @@
 	<br><br>
     So, thankfully, we can explicitly interact with Commanders.
 	<br><br>
-	Each such a Commander has a name:
+	Each such a Commander has a unique name:
 	<br><br>
 	<center>
 <img src="names.png" width="70%">
@@ -341,7 +365,7 @@
 	<br>	
 	and there is a lot of Commanders with different names.
 	<br><br>
-	Importantly, one Commander can only make the machine do one specific work. One Commander, one work.
+	Importantly, each Commander can make the machine do some specific work.
 	<br><br>
 	Just like on the street, when we need specific persons we might call (invoke) them by their names:
 	<br><br>
@@ -493,25 +517,31 @@
 	<br><br>
 	Is everything okay with it? I hope so.
 	<br><br>
-	I am directing you to another website to run the code so that this page is not too heavy.
+	I am directing you to another website to run the code so that this web page is not too heavy.
 	<br><br>
-	Only if you want, you might sign up there in some clicks on that awesome online codeEditor website and set your <b>Bright</b> theme instead of the default <b>Dark</b> one, or increase the <b>font size</b>, for example.
+	Only if you want,  on that awesome online codeEditor website you might set your <b>Bright</b> theme instead of the default <b>Dark</b> one, or increase the <b>font size</b>, for example:
 	<br><br>
+	<center>
+<img src="settings.png" width= 40%>
+	</center>
+	<br>
 	Back to the code.
 	<br><br>
-	The number <a style="background-color: #ffff00">157</a>, in this case, is our material (object) that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
+	The number <a style="background-color: #ffff00">157</a>, in the code, is our material (object) that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
 	<br><br>
 	<center>
 <img src="object.png" width="70%">
 	</center>
 	<br>
+	While running the code, the Commander <a style="background-color: #99f599">print()</a> takes our material (object) <a style="background-color: #ffff00">157</a> and prints (displays) it on the screen.
+	<br><br>
 	So Commanders are our main helpers in programming. When we need a Commander we call (invoke) it by writing its name in code and give it our material (object).
 	<br><br>
 	Here you might ask me: but where do these Commanders come from in the mind of the computer and who created them?
 	<br><br>
-	Other coders (programmers) created these Commanders by writing their codes. Other coders created these Commanders for themselves and everyone else.
+	The answer is that other coders (programmers) created these Commanders by writing their codes. Other coders created these Commanders for themselves and everyone else.
 	<br><br>
-	You will also be able to create your own Commanders really very soon.
+	You also will be able to create your own Commanders really very soon.
 	<br><br>
 	Back to code.
 	<br><br>
@@ -651,12 +681,18 @@
     </tr>
 </table>
 </center>
+	<br>
+	Please always click the <b>Try It Yourself</b> button to make sure that the code is correct and works well.
+	<br><br>
+	Also click this <b>Try It Yourself</b> button to play around with the code! In the codeEditor, you can change something in the code and get a new result while running. Playing with code is both interesting and extremely useful for becoming a cool coder. 😎🔥
+	<br><br><br><br><br>
 
-<br><br><br><br><br>
 
-
-
-
+<center><b>KotlinAndSwift</b><a style="color: gray">.github.io</a></center>
+<br>
+<center><small>Telegram: KotlinAndSwift</small></a></center>
+<br><br><br>
+</font0>
 
 
 
