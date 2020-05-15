@@ -526,13 +526,13 @@
 	<br>
 	Back to the code.
 	<br><br>
-	The number <a style="background-color: #ffff00">157</a>, in the code, is our object that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
+	The number <a style="background-color: #ffff00">157</a>, in the code, is an object that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
 	<br><br>
 	<center>
 <img src="object.png" width="60%">
 	</center>
 	<br>
-	In other words, we also might said that while running the code the Commander <a style="background-color: #99f599">print()</a> takes our object <a style="background-color: #ffff00">157</a> and prints (displays) this object as the result <a style="background-color: #00FFFF">157</a> on the screen:
+	In other words, we also might said that while running the code the Commander <a style="background-color: #99f599">print()</a> takes the object <a style="background-color: #ffff00">157</a> and prints (displays) this object as the result <a style="background-color: #00FFFF">157</a> on the screen:
 	<br>
 <center>
 <table>
@@ -566,7 +566,7 @@
 </table>
 </center>
 	<br>
-	Commanders are our main helpers in programming. When we need a Commander we call (invoke) it by writing its name in code and give it our data.
+	Commanders are our main helpers in programming. When we need a Commander we call (invoke) it by writing its name in code and give it an object.
 	<br><br>
 	Here you might ask me: But where do such Commanders, like <b>print()</b>, come from in the mind of the computer — who created them?
 	<br><br>
@@ -973,8 +973,115 @@
 	<br><br>
 	So, for example, to create an invariable Pocket Commander named Sam we must write val or let before the Commander’s name:
 	<br><br>
+<!--
+	fun main() {
+	    val Sam
+
+	}
+
+	let Sam
+	<br><br>
+	To put data 5 in control of this Pocket-Commander Sam we must further write the equal sign = and then 5:
+	<br><br>
+	fun main() {
+	    val Sam  = 5
+
+	}
+
+	let Sam  = 5
+
+	This line of code:
+	<br><br>
+	val Sam = 5
+	val Sam = 5
+	<br><br>
+	does not mean that:
+	<br><br>
+	Sam = 5
+	or
+	5 = Sam
+	<br><br>
+	No! No!
+	<br><br>
+	This single line of code:
+	<br><br>
+	val Sam = 5
+	val Sam = 5
+	<br><br>
+	only means that the Pocket-Commander Sam takes data 5 in its control.
+	<br><br>
+	Specifically, the Pocket-Commander Sam do the 3 things there:
+	creates the invariable pocket Sam
+	puts the data 5 in the invariable pocket Sam
+	makes the machine start storing the data 5 inside the invariable pocket Sam
+	<br><br>
+	For example, our whole code might look like this:
+	<br><br>
+	fun main() {
+	    val Sam = 5
+	    print(Sam)
+	}
+
+	let Sam = 5
+	print(Sam)
+	5
+	5
+	                          Try It Yourself                         Try It Yourself
+	<br><br>	                          
+	Magic! Try it yourself!
+	<br><br>
+	As we can see from the code, we call (invoke) the Commander Sam as an object for the Commander print():
+	<br><br>
+	fun main() {
+	    val Sam = 5
+	    print(Sam)
+	}
+
+	let Sam = 5
+	print(Sam)
+	5
+	5
+	<br><br>
+	In this case, the Pocket-Commander  Sam makes the machine give data 5 being stored in the virtual pocket Sam to the Commander print().
+	<br><br>
+	Another examples of code:
+	<br><br>
+	fun main() {
+	    val Sam = 157
+	    val John = 257
+	    println(Sam)
+	    println(John)
+	}
+
+	let Sam = 157
+	let John = 257
+	print(Sam)
+	print(John)
+	157
+	257
+	157
+	257
+
+	fun main() {
+	    val a = 1 + 2 
+	    val b = 3 - 1
+	    val c = 2 * 3
+	    val d = 6 / 3
+	    print(a + b + c - d)
+	}
+
+	let a = 1 + 2 
+	let b = 3 - 1
+	let c = 2 * 3
+	let d = 6 / 3
+	print(a + b + c - d)
 
 
+	9
+	9
+	Try It Yourself                                                                Try It Yourself
+
+-->
 
 	<br><br><br><br>
 
