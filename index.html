@@ -383,7 +383,7 @@
 	<br>
 	Let's look again at our familiar code:		
 <center>
-	<table>
+<table>
     <tr>
 	  	<td>&nbsp</td>
 	    <td>fun&nbspmain()&nbsp&nbsp{<br>
@@ -394,12 +394,12 @@
 	    <td><br><br>print(5)<br>&nbsp<br>&nbsp</td>
 	    <td>&nbsp</td>
 	</tr>
-	</table>
+</table>
 </center>
 	The <a style="background-color: #99f599">print</a> word in the code is namely the name of a Commander:
 	<br><br>
 <center>
-	<table>
+<table>
     <tr>
 	  	<td>&nbsp</td>
 	    <td>fun&nbspmain()&nbsp&nbsp{<br>
@@ -452,7 +452,6 @@
     </tr>
 </table>
 </center>
-
 	<br>
 	So the full name of this Commander is <a style="background-color: #99f599">print()</a>.
 	<br><br>
@@ -526,7 +525,7 @@
 	<br>
 	Back to the code.
 	<br><br>
-	The number <a style="background-color: #ffff00">157</a>, in the code, is an object that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
+	The number <a style="background-color: #ffff00">157</a>, in the code, is the object that we give to the Commander named <a style="background-color: #99f599">print(</a><a style="background-color: #99f599">)</a>:
 	<br><br>
 	<center>
 <img src="object.png" width="60%">
@@ -749,8 +748,6 @@
 	  </tr>
 </table>
 </center>
-
-
 	<br>
 	In programming, these Arithmetic Commanders also work the same way:
 	<br><br>
@@ -956,9 +953,9 @@
 	<br><br>
 	It is important to remember and understand that Commanders (incl. Pocket Commanders) can make the machine do what we want.
 	<br><br>
-	Pocket Commanders are called this way not because they are miniature or capable of being carried in one's pocket, but only because they automatically make the machine create virtual pockets for objects.
+	Pocket Commanders are called this way not because they are miniature or capable of being carried in one's pocket, but only because they automatically make the machine create virtual <b>pockets</b> for storing objects.
 	<br><br>
-	Interestingly, when creating Commanders we must give them names just like parents give names to their kids when the kids are born.
+	Interestingly, when creating any Commanders we must give them names just like parents give names to their kids when the kids are born.
 	<br><br>
 	There are 2 sorts of Pocket Commanders that we might create:
 	<br>
@@ -969,136 +966,202 @@
 
 	<fontHeading><center>Invariable Pocket Commanders</center></fontHeading>
 	<font0>
-	If we create an invariable Pocket Commander it means that then we cannot change the object controlled by this Commander.
+	If we create an invariable Pocket Commander it means that then we cannot change the object controlled by this Commander. This will be more clear with examples.
 	<br><br>
-	So, for example, to create an invariable Pocket Commander named Sam we must write val or let before the Commander’s name:
+	So, for example, to create our own invariable Pocket Commander named <a style="background-color: #99f599">Sam</a> we must write <a style="background-color: #ffd6ff">val</a> or <a style="background-color: #ffd6ff">let</a> before the Commander’s name:
 	<br><br>
-<!--
-	fun main() {
-	    val Sam
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>fun&nbspmain()&nbsp&nbsp{
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">val</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp&nbsp
+	    	<br>
+	    	<br>
+	    }</td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td><a style="background-color: #ffd6ff">let</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp&nbsp
+	    	<br>
+	    	<br>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+	<br>
+	Next, to put the object <b>5</b> in control of the invariable Pocket-Commander <a style="background-color: #99f599">Sam</a> we must further write the equal sign <a style="background-color: #d3d5ff">=</a> and then <a style="background-color: #ffff00">5</a>:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>fun&nbspmain()&nbsp&nbsp{
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">val</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp
+	    	<br>
+	    }</td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td><a style="background-color: #ffd6ff">let</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	 		<br>
+	 		<br>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+	<br>
+	Don't let the equal sign <a style="background-color: #d3d5ff">=</a> confuse you. This single line of code:
+	<br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>	    	
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">val</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    </td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td><a style="background-color: #ffd6ff">let</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+</table>
+</center>
+	<br>
+	only means that the invariable Pocket Commander <a style="background-color: #99f599">Sam</a> takes the object <a style="background-color: #ffff00">5</a> in its control.
+	<br><br>
+	Specifically, that single line of code above means that the invariable Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine do the 3 things there:<br>
+	 · create the invariable pocket <a style="background-color: #00FFFF">Sam</a>
+	<br>
+	 · put the object <b>5</b> in the invariable pocket <a style="background-color: #00FFFF">Sam</a>
+	<br>
+	 · start storing the object 5 inside the invariable pocket <a style="background-color: #00FFFF">Sam</a>
+	<br><br>
 
-	}
-
-	let Sam
+	Please distinguish here the invariable Pocket Commander <a style="background-color: #99f599">Sam</a> and the invariable pocket <a style="background-color: #00FFFF">Sam</a>:
 	<br><br>
-	To put data 5 in control of this Pocket-Commander Sam we must further write the equal sign = and then 5:
-	<br><br>
-	fun main() {
-	    val Sam  = 5
-
-	}
-
-	let Sam  = 5
-
-	This line of code:
-	<br><br>
-	val Sam = 5
-	val Sam = 5
-	<br><br>
-	does not mean that:
-	<br><br>
-	Sam = 5
-	or
-	5 = Sam
-	<br><br>
-	No! No!
-	<br><br>
-	This single line of code:
-	<br><br>
-	val Sam = 5
-	val Sam = 5
-	<br><br>
-	only means that the Pocket-Commander Sam takes data 5 in its control.
-	<br><br>
-	Specifically, the Pocket-Commander Sam do the 3 things there:
-	creates the invariable pocket Sam
-	puts the data 5 in the invariable pocket Sam
-	makes the machine start storing the data 5 inside the invariable pocket Sam
-	<br><br>
+	<center>
+<img src="distinguish.png" width="70%">
+	</center>
+	<br>
 	For example, our whole code might look like this:
 	<br><br>
-	fun main() {
-	    val Sam = 5
-	    print(Sam)
-	}
-
-	let Sam = 5
-	print(Sam)
-	5
-	5
-	                          Try It Yourself                         Try It Yourself
-	<br><br>	                          
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>fun&nbspmain()&nbsp&nbsp{
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">val</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbspprint(<a style="background-color: #99f599">Sam</a>)
+	    	<br>
+	    }</td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td><a style="background-color: #ffd6ff">let</a>&nbsp<a style="background-color: #99f599">Sam</a>&nbsp<a style="background-color: #d3d5ff">=</a>&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	print(<a style="background-color: #99f599">Sam</a>)
+	    	<br>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+    <!-- Empty Row 2 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+    </tr>
+  	<!-- Result Row 3 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a></td>
+	    <td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a></td>
+	    <td>&nbsp</td>
+    </tr>
+  	<!--  Link Row 7 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td><a href = "https://paiza.io/projects/8gCUxj5VPalX32DVsFk4CQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td>&nbsp</td>
+	    <td><a href = "https://paiza.io/projects/6bkgzMfT3crN3OAoeQOC8w?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td>&nbsp</td>
+    </tr>
+</table>
+</center>
+	<br>
 	Magic! Try it yourself!
 	<br><br>
-	As we can see from the code, we call (invoke) the Commander Sam as an object for the Commander print():
+	As we can see from the code, we call (invoke) the invariable Pocket Commander <a style="background-color: #99f599">Sam</a> as the object for the Commander <a style="background-color: #ffd6ff">print()</a>:
 	<br><br>
-	fun main() {
-	    val Sam = 5
-	    print(Sam)
-	}
-
-	let Sam = 5
-	print(Sam)
-	5
-	5
-	<br><br>
-	In this case, the Pocket-Commander  Sam makes the machine give data 5 being stored in the virtual pocket Sam to the Commander print().
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td>&nbsp</td>
+	    <td>fun&nbspmain()&nbsp&nbsp{
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbspval&nbspSam&nbsp=&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">print(</a><a style="background-color: #99f599">Sam</a><a style="background-color: #ffd6ff">)</a>
+	    	<br>
+	    }</td>
+	    <td><pre>            </pre>
+	    </td>
+	 	<td>let&nbspSam&nbsp=&nbsp<a style="background-color: #ffff00">5</a>
+	    	<br>
+	    	<a style="background-color: #ffd6ff">print(</a><a style="background-color: #99f599">Sam</a><a style="background-color: #ffd6ff">)</a>
+	    	<br>
+	 	</td>
+		<td>&nbsp</td>
+	</tr>
+    <!-- Empty Row 2 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+    </tr>
+  	<!-- Result Row 3 -->
+    <tr>
+		<td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a></td>
+	    <td>&nbsp</td>
+	    <td><a style="background-color: #00FFFF">5</a></td>
+	    <td>&nbsp</td>
+    </tr>
+</table>
+</center>
+	<br>
+	In this case, the Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine give the Commander <a style="background-color: #ffd6ff">print()</a> the object <a style="background-color: #ffff00">5</a> being stored in the invariable pocket <a style="background-color: #00FFFF">Sam</a>.
 	<br><br>
 	Another examples of code:
-	<br><br>
-	fun main() {
-	    val Sam = 157
-	    val John = 257
-	    println(Sam)
-	    println(John)
-	}
-
-	let Sam = 157
-	let John = 257
-	print(Sam)
-	print(John)
-	157
-	257
-	157
-	257
-
-	fun main() {
-	    val a = 1 + 2 
-	    val b = 3 - 1
-	    val c = 2 * 3
-	    val d = 6 / 3
-	    print(a + b + c - d)
-	}
-
-	let a = 1 + 2 
-	let b = 3 - 1
-	let c = 2 * 3
-	let d = 6 / 3
-	print(a + b + c - d)
-
-
-	9
-	9
-	Try It Yourself                                                                Try It Yourself
-
--->
-
-	<br><br><br><br>
 
 
 
 
-<!--
-	<br><br>
-	 The Stores can store iformation just like you can 
 
 
 
-	<br><br>
-	For now, consider a 
-	So there is a sort of Commanders called Stores. The Stores can store iformation just like you can 
-	<br><br>
--->
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<center>
 	The book is being added with content
 	<br>
