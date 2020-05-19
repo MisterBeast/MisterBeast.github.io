@@ -113,12 +113,93 @@
 			  text-align: left;
 			}
 	
+
+
+
+a:link, a:visited {
+  background-color: #25003d;
+  color: white;
+  
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #750075 ;
+  color: white;
+}
+
+
+a.button {
+  background-color: #25003d;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.button {
+  background-color: #25003d;
+  border: none;
+  font-family: arial; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+	.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}		
+
+
 	</style>
-
-	<!-- Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://tippin.me/js/clipboard.min.js"></script>
-
 
 </head>
 
@@ -172,7 +253,7 @@
 	<br><br>
 	<fontHeading><center>First Understandable</center></fontHeading>
 	<div class="d"><br>
-	<font0>I practice redundancy throughout this one-page book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope it will be the first easily understandable programming book for all girls and boys from 8 year old.
+	<font0>I practice redundancy throughout this one-page, interactive book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope it will be the first easily understandable programming book for all girls and boys from 8 year old.
 	<br><br>
 	<center>
 <img src="joy.png" width= 300px>
@@ -227,11 +308,11 @@
 	  	<td>&nbsp</td>
 		<td>
 		<font0><i><small>	
-		<a style="color: #666666">
+		<k style="color: #666666">
 		In my opinion:       
 		<br><br>
 		The&nbspworld&nbspof&nbspprogramming&nbspextremely&nbspneeds <b>new uniform terms</b> which would clearly and properly express the meaning of all common concepts in order to more easily onboard newcomers and move civilization ahead.	
-		</a>	
+		</k>	
 		</small></i></font0>
 	 	</td>
 		<td>&nbsp</td>
@@ -653,14 +734,6 @@
 	    <td><a style="background-color: #00FFFF">5</a></td>
 	    <td>&nbsp</td>
     </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-    </tr>
   <!--  Link Row 7 -->
     <tr>
 		<td>&nbsp</td>
@@ -679,13 +752,13 @@
 <img src="green_run.png" height= 60px>
 	</center>	
 	<br>
-	in order to see the result of running the code.
+	in order to run the code.
 	<br><br>
 	Is everything okay with it? I hope so.
 	<br><br>
 	Next, I will mostly direct you to another websites for running code so that this one-page, interactive book would be light and never be too heavy.
 	<br><br>
-	Only if you want,  on that awesome online codeEditor <a href = "https://paiza.io/projects/nvakNv6-S9s7yApjUQq_9g?language=kotlin" target = "_blank">website</a> you might set your <b>Bright</b> theme instead of the default <b>Dark</b> one, or increase the <b>font size</b>, for example:
+	Only if you want,  on that awesome online codeEditor website you might set your <b>Bright</b> theme instead of the default <b>Dark</b> one, or increase the <b>font size</b>, for example:
 	<br><br>
 	<center>
 <img src="settings.png" width= 40%>
@@ -822,14 +895,6 @@
 	    </td>
 	    <td>&nbsp</td>
     </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-    </tr>
   <!--  Link Row 7 -->
     <tr>
 		<td>&nbsp</td>
@@ -894,14 +959,7 @@
 	    </td>
 	    <td>&nbsp</td>
     </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-    </tr>
+
   <!--  Link Row 7 -->
     <tr>
 		<td>&nbsp</td>
@@ -1000,14 +1058,7 @@
 	    </td>
 	    <td>&nbsp</td>
     </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-    </tr>
+  
   <!--  Link Row 7 -->
     <tr>
 		<td>&nbsp</td>
@@ -1090,14 +1141,6 @@
 	    	<br>
 	    	<a style="background-color: #00FFFF">4</a>
 	    </td>
-	    <td>&nbsp</td>
-    </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
 	    <td>&nbsp</td>
     </tr>
   <!--  Link Row 7 -->
@@ -1449,14 +1492,7 @@
 	    </td>
 	    <td>&nbsp</td>
     </tr>
-    <!-- Empty Row 6 -->
-    <tr>
-		<td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-	    <td>&nbsp</td>
-    </tr>
+ 
   <!--  Link Row 7 -->
     <tr>
 		<td>&nbsp</td>
@@ -2255,27 +2291,52 @@
 </center>
 	<br>
 	Magic! Try it yourself!
-	<br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<center>
-	<h1 id="myHeader">Hello World!</h1>
-<button onclick="displayResult()">Change text</button>
 
-<script>
-function displayResult() {
-  document.getElementById("myHeader").innerHTML = "Have a nice day!";
-}
-</script>
+
 <br><br>
-<!-- Beginning of tippin.me Button -->
-<div id="tippin-button" data-dest="theHigashikata"></div>
-<script src="https://tippin.me/buttons/tip.js?0001" type="text/javascript"></script>
-<!-- End of tippin.me Button -->
+<center>
+
+If you are loving what I do<br>
+please donate some money  :)<br><br>
+	<center>
+<img src="blogo.png" height="60">
+	</center>
+<br>
+<i><b>for normal payments</b><br>
+bitcoin address:	
+	<center>
+<img src="QQH.png" height="320">
+	</center>
+<small><small><small><small>
+1AE9xKHgBifCrr9VLXtYTJCnPo6etKnQQH</small></small></small></small>
+<br><br><br>
+<b>for instant payments</b><br>
+bitcoin invoice:<br>
+</i>
+<a href = "https://tippin.me/@theHigashikata" target = "_blank">&nbsp&nbsp&nbspGet&nbspBitcoin&nbspInvoice&nbsp&nbsp&nbsp</a>
+<br>
+
+
+
 </center>
 
 
-<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
 	<center>
 	The book is being added with content
 	<br>
@@ -2286,6 +2347,10 @@ function displayResult() {
 	<br>
 	<small>Twitter: KotlinAndSwift</small>
 	<br><br>
+
+
+
+
 	</center>
 
 
