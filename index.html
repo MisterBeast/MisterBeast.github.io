@@ -2397,7 +2397,7 @@
 </table>
 </center>
 	<br>
-	Next, the machine comes to the the <b>2nd string</b> of the code and sees there <a style="background-color: #ffff00">readLine()</a> -- the Commander <a style="background-color: #ffff00">readLine()</a>:
+	Next, the machine comes to the <b>2nd string</b> of the code and sees there <a style="background-color: #99f599">readLine()</a> — the Commander <a style="background-color: #99f599">readLine()</a>:
 	<br><br>
 <center>
 <table>
@@ -2407,7 +2407,7 @@
 	    <td>
 	    	fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
-		    &nbsp&nbsp&nbsp&nbspval userInput = <a style="background-color: #ffff00">readLine()</a><br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = <a style="background-color: #99f599">readLine()</a><br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
 			}
@@ -2415,7 +2415,7 @@
 	    <td><pre> </pre>
 	 	<td>
 	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
-		    let userInput = <a style="background-color: #ffff00">readLine()</a><br>
+		    let userInput = <a style="background-color: #99f599">readLine()</a><br>
 		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
 		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
 	 	</td>
@@ -2424,8 +2424,83 @@
 </table>
 </center>
 	<br>
-	Heaving met the Commander <a style="background-color: #ffff00">readLine()</a>, the machine pauses everything and become waiting for the user's input.
+	Having met the Commander <a style="background-color: #99f599">readLine()</a>, the machine pauses everything and become waiting for the user's input.
 	<br><br>
+	In other words, the Commander <a style="background-color: #99f599">readLine()</a> makes the machine pause everything and become waiting for the user's input.
+	<br><br>
+	After the user inputs (type) the number <b>9</b> and press the <b>Enter</b> button on the keyboard the machine takes the user's input and put it into the Invariable-Pocket userInput accoding to the Invariable-Pocket Commander <a style="background-color: #d3d5ff">userInput</a>:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">val</a> <a style="background-color: #d3d5ff">userInput</a> = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    <a style="background-color: #ffd6ff">let</a> <a style="background-color: #d3d5ff">userInput</a> = readLine()<br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	Next, the machine comes to the <b>3rd string</b> of the code and prints the text inside the quotes <a style="background-color: #00FFFF">"</a> <a style="background-color: #00FFFF">"</a>, previously calling (invoking) the Invariable-Pocket Commander <a style="background-color: #d3d5ff">userInput</a>:
+	<br><br>
+<center>
+<table>
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp$<a style="background-color: #d3d5ff">userInput</a>.<a style="background-color: #00FFFF">"</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    let userInput = readLine()<br>
+		    print(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp\(<a style="background-color: #d3d5ff">userInput</a>).<a style="background-color: #00FFFF">"</a>)<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	Please pay attention that there are the adorable Commanders <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, respectivly. These Commanders, as we know, make calling (invoking) the Pocket Commander inside the quotes possible. 
+	<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
