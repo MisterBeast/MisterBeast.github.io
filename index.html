@@ -360,7 +360,7 @@
 	<br>	
 	Please, don’t worry about the code so far. Also, don’t worry about why there is the <b>fun main()</b> part in Kotlin's code and there is not the same part in Swift's code. Don’t worry about these things so far.
 	<br><br>	
-	Let's run this code in the codeEditor below — right here on this page:   	
+	Let's right away run this code in the codeEditor below — right here on this page:   	
 	<br>
 	<!-- 5-->
 <pre><iframe src="https://paiza.io/projects/e/pNPTzWhcsGTnNMMEbf_yCw?theme=clouds" width="50%" height="350" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/QlQjAqm68HQLhlIriAqbmg?theme=clouds" width="49%" height="350" scrolling="no" seamless="seamless"></iframe></pre>
@@ -2137,7 +2137,7 @@
 	<br><br>
 	Imagined it? Great. 
 	<br><br>
-	Right now, let's write a program that would ask for the age of a person; and after the person inputs (types) it  (for example, <b>9</b>) the program would print (display) the following text:
+	Right now, let's write a program that would work in that so-called <b>interactive mode</b>: would ask for the age of a person; and after the person inputs (types) it  (for example, <b>9</b>) the program would print (display) the following text:
 	<br><br>	
 <center>
 <table>
@@ -2211,6 +2211,12 @@
 	<br>
 	and press the <b>Enter</b> button on the keyboard for entering this info.
 	 <br><br>
+	And, after the user (person) does input the number <b>9</b>, the screen must look this way:
+	<br><br>
+	<center>
+<img src="input9.png" width="48%">
+	</center>
+	<br>
 	For example, our whole code might look like this:
 	<br><br>
 <center>
@@ -2220,32 +2226,24 @@
 	  	<td></td>
 	    <td>
 	    	fun&nbspmain()&nbsp{<br>
-		    &nbsp&nbsp&nbsp&nbspprintln("Please input your age:")<br>
-		    &nbsp&nbsp&nbsp&nbspval userAge = readLine()<br>
-		    &nbsp&nbsp&nbsp&nbspprintln("Your age is $userAge.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
 			}
 	    </td>
 	    <td><pre> </pre>
 	 	<td>
-	 		print("Please input your age:")<br>
-		    let userAge = readLine()<br>
-		    print("Your age is /(userAge).")<br>
-		    print("Have a good day!")<br>
-
-	 		
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    let userInput = readLine()<br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
 	 	</td>
 		<td></td>
 	</tr>
-    <!-- Empty Row 2 -->
-    <tr>
-		<td></td>
-	    <td><pre>                                     </pre></td>
-	    <td></td>
-	    <td><pre>                                 </pre></td>
-	    <td></td>
-    </tr>
-  	<!-- Result Row 3 -->
+
+ <!-- 
+  Result Row 3 
     <tr>
 		<td></td>
 	    <td><a style="background-color: #00FFFF">5</a></td>
@@ -2253,7 +2251,7 @@
 	    <td><a style="background-color: #00FFFF">5</a></td>
 	    <td></td>
     </tr>
-  	<!--  Link Row 7 -->
+  	  Link Row 
     <tr>
 		<td></td>
 	    <td><a href = "https://paiza.io/projects/XozXRhmC9mgmrcoF_ZCprw?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
@@ -2261,13 +2259,216 @@
 	    <td><a href = "https://paiza.io/projects/Io7h-CPI4QglPcT1KhHRFA?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
+    7 -->
 </table>
 </center>
 	<br>
+	We will sort out everything in this code a little bit later.
+	<br><br>
+	For now, let's run this code right away!
+	<br><br>
+	And, we will do it in the new codeEditor below.
+	<br>
+	First let's run the Kotlin code:
+	<br>
+	<!-- o interactive-->
+	<center>
+<pre><iframe src="https://www.jdoodle.com/embed/v0/25np" width="50%" height="600" scrolling="no" seamless="seamless"></iframe></pre>
+	</center>
+	Please pay attention to the first string of that code.
+	<br><br>
+	Earlier in Kotlin, the <b>main</b> string of code  should have looked  this way:
+	<br><br>	
+<center>
+<table>
+    <!-- Code Row 1 -->
+	  <tr>
+	  	<td>fun&nbspmain(args:&nbspArray<a style="background-color: white"><</a>String>)&nbsp{<br></td>
+	  </tr>
+</table>
+</center>
+	<br>
+	But now, as we know, it looks like this:
+	<br><br>	
+<center>
+<table>
+    <!-- Code Row 1 -->
+	  <tr>
+	  	<td>fun&nbspmain()&nbsp{<br></td>
+	  </tr>
+</table>
+</center>
+	<br>
+	The team behind that above codeEditor has not upgraded their editor  yet. For us it is not any problem since in both the cases, the codes work the same way. Just ignore that. 
+	<br><br>
+	So, in order to run our code <b>in the codeEditor above</b>, first of all, please turn on the <b>Interactive Mode</b> button there:
+	<br><br>
+	<center>
+<img src="interactive.png" width="90%">
+	</center>
+	<br>
+	Next, please press the <b>Execute</b> button there:
+	<br><br>
+	<center>
+<img src="execute.png" width="20%">
+	</center>
+	<br>
+	The <b>Execute</b> button is just another name of the <b>Run</b> button. So pressing the <b>Execute</b> button we run code.
+	<br><br>
+	After we run the code above we will see this:
+	<br><br>
+	<center>
+<img src="your_age.png" width="90%">
+	</center>
+	<br>
+	Then we, playing the role of the user, should input (type) a number. For example, let's input (type) the number <b>9</b> and then press the <b>Enter</b> button on the keyboard:
+	<br><br>
+	<center>
+<img src="enter.png" width="90%">
+	</center>
+	<br>
+	and we will see this:
+	<br><br>
+	<center>
+<img src="haveagoodday.png" width="90%">
+	</center>
+	<br>
+	So you have just run your first program in the interactive mode: your first interactive program. Congratulations!
+	<br><br>
+	Now we know how a program may enteract with a user in the interactive mode. Great.
+	<br><br>
+	That awesome codeEditor above works absolutely perfectly for Kotlin interactive programs, but it doesn't do the same thing for Swift interactive programs.
+	<br><br>
+	For the sake of uniformity, let's use one codeEdtor for both the languages even although there not everything will work perfectly in the interactive mode. Okay? Good.
+	<br><br>
+	So let's run this code in the pretty familiar codeEdotor below:
+	<br>
+<pre><iframe src="https://paiza.io/projects/e/nQtOXnXOg91R-3ZJYV68nA?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/aJ6cZARiGSnEu_bvQKF2sQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+
+	But first, since this codeEditor above doesn't work perfectly with interactive programs, we have to put our coursor inside the below field and input the number <b>9</b> like this:
+	<br><br>
+	<center>
+<img src="input_9.png" width="100%">
+	</center>
+	<br>
+	Next, in order to run the code, in the codeEditor above, please click the Run button:
+	<br><br>
+	<center>
+<img src="Run.png" height= 60px>
+	</center>
+	<br>
+	and you will see this:
+    <!-- 5 with the result lud.gor ... -->
+<pre><iframe src="https://paiza.io/projects/e/pkoxuRIDwUrRWgGUHL-pYQ?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/xO1x5prea6c5R8q6ZGKWxQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+	Great.
+	<br><br>
+	For now, the <b>1st thing</b> that is important to understand is that this pretty familiar codeEditor above doesn't work perfectly in the interactive mode, in other words, with interactive programs.
+	<br><br>
+	So for this reason, we did input the number <b>9</b> before running the code. Only for this reason!
+	<br><br>
+	The <b>2nd thing</b> that is important to understand is that the results are slightly different.
+	<br><br>
+	So in the Swift case, we see this line in the result:
+<br><br>	
+<center>
+<table>
+    <!-- Code Row 1 -->
+	  <tr>
+	  	<td>Your&nbspage&nbspis&nbspOptional("9").</td>
+	  </tr>
+</table>
+</center>
+	<br>
+
+	This result shows that the program took the user's input <b>9</b>: the interaction happened! It is absolutely great.
+	<br><br>
+	And also, the program have added extra information to the input <b>9</b>:<br><br>	
+<center>
+<table>
+    <!-- Code Row 1 -->
+	  <tr>
+	  	<td>Optional("9")<br></td>
+	  </tr>
+</table>
+</center>
+	<br>
+    This is just a feature of the Swift language. We will dive in it later. For now, just ignore it.
+    <br><br>
+	And now, let's sort out everything in this code. Consider how exactly the program works.
+	<br><br>
+	So by the <b>1st string</b> of the code, as we already know, we make the machine print (dispaly) the message <a style="background-color: #ffff00">Please&nbspinput&nbspyour&nbspage:</a> on the screen:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("<a style="background-color: #ffff00">Please&nbspinput&nbspyour&nbspage:</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("<a style="background-color: #ffff00">Please&nbspinput&nbspyour&nbspage:</a>")<br>
+		    let userInput = readLine()<br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	Next, the machine comes to the the <b>2nd string</b> of the code and sees there <a style="background-color: #ffff00">readLine()</a> -- the Commander <a style="background-color: #ffff00">readLine()</a>:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = <a style="background-color: #ffff00">readLine()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    let userInput = <a style="background-color: #ffff00">readLine()</a><br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	Heaving met the Commander <a style="background-color: #ffff00">readLine()</a>, the machine pauses everything and become waiting for the user's input.
+	<br><br>
+
+
+
+
+<!--
+
+	The mashine prints (dispaly) this message and become waiting for the user's input.
+	<br><br>
+	When the user inputs (type) the number 9 and press the Enter button on the keyboard, we, by the <b>2nd string</b>, make the machine take this input in its mind:
+		<br><br>
+
+
+	<br><br>
 	Magic! Try it yourself!
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
+-->
 
 
 <br><br>
