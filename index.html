@@ -2368,7 +2368,33 @@
 	<br>
     This is just a feature of the Swift language. We will dive in it later. For now, just ignore it.
     <br><br>
-	And now, let's sort out everything in this code. Consider how exactly the program works.
+	And now, let's sort out everything in this code below: 
+	<br><br>
+<center>
+<table>
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    let userInput = readLine()<br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	Consider how exactly the program works.
 	<br><br>
 	So by the <b>1st string</b> of the code, as we already know, we make the machine print (dispaly) the message <a style="background-color: #ffff00">Please&nbspinput&nbspyour&nbspage:</a> on the screen:
 	<br><br>
@@ -2465,7 +2491,7 @@
 	    	fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
 		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
-		    &nbsp&nbsp&nbsp&nbspprintln(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp$<a style="background-color: #d3d5ff">userInput</a>.<a style="background-color: #00FFFF">"</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspprintln(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp<a style="background-color: #00ff00">$</a><a style="background-color: #d3d5ff">userInput</a>.<a style="background-color: #00FFFF">"</a>)<br>
 		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
 			}
 	    </td>
@@ -2473,7 +2499,7 @@
 	 	<td>
 	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
 		    let userInput = readLine()<br>
-		    print(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp\(<a style="background-color: #d3d5ff">userInput</a>).<a style="background-color: #00FFFF">"</a>)<br>
+		    print(<a style="background-color: #00FFFF">"</a>Your&nbspage&nbspis&nbsp<a style="background-color: #00ff00">\(</a><a style="background-color: #d3d5ff">userInput</a><a style="background-color: #00ff00">)</a>.<a style="background-color: #00FFFF">"</a>)<br>
 		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
 	 	</td>
 		<td></td>
@@ -2481,10 +2507,35 @@
 </table>
 </center>
 	<br>
-	Please pay attention that there are the Commanders <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, respectivly. These adorable Commanders, as we know, make calling (invoking) the Pocket Commander inside the quotes possible. 
+	The machine prints this text into the result.
 	<br><br>
-
-
+	Please pay attention that there are the Commanders <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, respectivly. These adorable Commanders, as we know, make calling (invoking) the Pocket Commander <a style="background-color: #d3d5ff">userInput</a> inside the quotes possible. 
+	<br><br>
+	Next, the machine comes to the <b>4th string</b> of the code and prints the text <a style="background-color: #ffff00">Have&nbspa&nbspgood&nbspday!</a> into the result:
+	<br><br>
+<center>
+<table>
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspage:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspage&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("<a style="background-color: #ffff00">Have&nbspa&nbspgood&nbspday!</a>")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspage:")<br>
+		    let userInput = readLine()<br>
+		    print("Your&nbspage&nbspis&nbsp\(userInput).")<br>
+		    print("<a style="background-color: #ffff00">Have&nbspa&nbspgood&nbspday!</a>")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
 
 
 
