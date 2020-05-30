@@ -238,7 +238,9 @@
 	<br><br>
 	<fontHeading><center>First Understandable</center></fontHeading>
 	<div class="d"><br>
-	<font0>I practice redundancy throughout this one-page, interactive book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope it will be the first easily understandable programming book for girls and boys age 8+. 
+	<font0>I practice redundancy throughout this one-page, interactive book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope it is the first easily understandable programming book for girls and boys age 8+. 
+	<br><br>
+	The best entry point for everyone who wants to start learning programming.
 	<br><br>
 	<center>
 <img src="joy.png" width= 300px>
@@ -1267,9 +1269,8 @@
 	<br>
 	Of course, such <b>pockets</b>, in programming, also are virtual and exist only in the mind of the machine. Of course, we cannot feel them by our hands. But they really exist and can store virtual objects.
 	<br><br>
-	For example, to control the virtual object <b>5</b> in the way described above, we first must <b>create</b> a special Commander — <b>Pocket Commander</b> — which, in turn, makes the machine create a virtual pocket for storing that virtual object.
+	For example, to control the virtual object <b>5</b> in the way described above, we first must <b>create</b> a special Commander — <b>Pocket Commander</b> — which, in turn, makes the machine create the virtual pocket for storing that virtual object <b>5</b>. Very soon we will see how to easily create Pocket Commanders.
 	<br><br>
-
 	By the way, Pocket Commanders are called this way not because they are miniature or capable of being carried in one's pocket, but only because they make the machine create virtual <b>pockets</b> for storing virtual objects.
 	<br><br>
 	Interestingly, when creating any Commanders (of course, incl. Pocket Commanders) we must give them names just like parents give names to their kids when the kids are born.
@@ -1354,9 +1355,9 @@
 </table>
 </center>
 	<br>
-	only means that the Invariable-Pocket Commander <a style="background-color: #99f599">Sam</a> takes the object <a style="background-color: #ffff00">5</a> in its control.
+	only means that the Invariable-Pocket Commander <a style="background-color: #99f599">Sam</a> takes the object <a style="background-color: #ffff00">5</a> in its own control.
 	<br><br>
-	Specifically, that single line of code above means that the Invariable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine do the 3 things there:<br>
+	Specifically, that single line of code above means that the Invariable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine do the 3 things:<br>
 	 · create the invariable pocket <a style="background-color: #00FFFF">Sam</a>
 	<br>
 	 · put the object <a style="background-color: #ffff00">5</a> in the invariable pocket <a style="background-color: #00FFFF">Sam</a>
@@ -1832,9 +1833,9 @@
 </table>
 </center>
 	<br>
-	only means that the Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> takes the object <a style="background-color: #ffff00">5</a> in its control.
+	only means that the Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> takes the object <a style="background-color: #ffff00">5</a> in its own control.
 	<br><br>
-	Specifically, that single line of code above means that the Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine do the 3 things there:<br>
+	Specifically, that single line of code above means that the Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine do the 3 things:<br>
 	 · create the variable pocket <a style="background-color: #00FFFF">Sam</a>
 	<br>
 	 · put the object <a style="background-color: #ffff00">5</a> in the variable pocket <a style="background-color: #00FFFF">Sam</a>
@@ -1848,7 +1849,7 @@
 <img src="distinguish.png" width="70%">
 	</center>
 	<br>
-	One name, but different entities! The Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine create the variable pocket <a style="background-color: #00FFFF">Sam</a>. Keep it in mind too.
+	One name again, but different entities! The Variable-Pocket Commander <a style="background-color: #99f599">Sam</a> makes the machine create the variable pocket <a style="background-color: #00FFFF">Sam</a>. Keep it in mind too.
 	<br><br>
 	For example, our whole code might look like this:
 	<br><br>
@@ -2112,15 +2113,19 @@
 	
 	Here you might ask me: <i>Why ever should we create Invariable-Pocket Commanders, since Variable-Pocket Commanders can do everything they can and even more?</i>
 	<br><br>
-	The answer is that there is one notable thing about the programming process. The programmers (coders) spend a lot of their time not writing but reading code:
+	The answer is that there is one notable fact about the programming process: programmers (coders) spend a lot of time reading code
 	<br><br>
 	<center>
 <img src="reading.png" width="100%">
 	</center>
 	<br>
-	So really while programming, you will be spending a lot of your time reading your own code and if there is a lot of Variable-Pocket Commanders it might sometimes be fairly hard for you to understand how exactly the program works, even written just a little while ago, since you will need to check each Variable-Pocket Commander at each point of the program for changes to its object.
+	that was written by others.
 	<br><br>
-	So from this perspective, the most experienced programmers recommend creating Invariable-Pocket Commanders (<a style="background-color: #ffd6ff">val</a> and <a style="background-color: #ffd6ff">let</a>, respectively) always when it is just possible.
+	So really while programming, you will be spending a lot of your time reading someone else's code, and if there is a lot of Variable-Pocket Commanders it might be fairly hard for you to understand how exactly the code works, since you need to check each Variable-Pocket Commander at each point of the program for changes to its object.
+	<br><br>
+	So from this perspective, the most experienced programmers strongly recommend creating Invariable-Pocket Commanders (<a style="background-color: #ffd6ff">val</a> and <a style="background-color: #ffd6ff">let</a>, respectively) when it is just possible. So we will always do just so.
+	<br><br>
+	And remember: good code is like a good joke: it needs no explanation.
 	<br><br>
 	</font0>
 
@@ -2180,7 +2185,7 @@
 	<br>
 	As we can see, in the code above there is the Quotes Commander <a style="background-color: #00FFFF">"</a> <a style="background-color: #00FFFF">"</a> and inside the quotes there is the Pocket Commander <a style="background-color: #d3d5ff">Age</a>. In other words, we can call (invoke) the Pocket Commander inside the quotes.
 	<br><br>
-	Please pay attention, we can do it only thanks to such Commanders as <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, respectivly. So these adorable Commanders make calling (invoking) the Pocket Commander inside the quotes possible. Without these Commanders we would have this ridiculous result:
+	Please pay attention, we can do it only thanks to such Commanders as <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, respectivly. Without them we would get this ridiculous result:
 	<br><br>
 <center>
 <table>
@@ -2232,7 +2237,7 @@
 </table>
 </center>
 	<br>
-	But we have these adorable Commanders <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a>, and we can make magic.
+	But fortunately, thanks to these adorable Commanders <a style="background-color: #00ff00">$</a> and <a style="background-color: #00ff00">\(</a> <a style="background-color: #00ff00">)</a> we can make that magic.
 	<br><br>
 	Great.
 	<br><br>
@@ -2244,7 +2249,7 @@
 <img src="input.png" width="48%">
 	</center>
 	<br>
-	Imagine the situation in which your program interacts with another person: the program asks the person to input (type) something by the keyboard and depending on what the person inputs (types) the result of running the program varies.
+	Imagine your program interacts with another person: the program asks the person to input (type) something by the keyboard and depending on what the person inputs (types) the result of running the program varies.
 	<br><br>
 	Imagined it? Great. 
 	<br><br>
@@ -2968,8 +2973,157 @@
 	<br>
 	Once again, please click this <b>Try It Yourself</b> button to play around with the code! Being in the codeEditor, you might change something in your code and get a new result while running. Playing with code is both interesting and extremely useful for becoming a cool coder. 😎🔥
 	<br><br>
+	A program working with the user's input is a lot more interesting since it is interactive and, in a way, more alive.
+	<br><br>
+	Another example of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspname:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userInput = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Your&nbspname&nbspis&nbsp$userInput.")<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Have a good day!")<br>
+			}
+	    </td>
+	    <td><pre> </pre>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspname:")<br>
+		    let userInput = readLine()<br>
+		    print("Your&nbspname&nbspis&nbsp\(userInput).")<br>
+		    print("Have&nbspa&nbspgood&nbspday!")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>		
+	 	</td>
+		<td></td>
+	</tr>
+	 <!-- Eempty row 2 -->   
+	    <tr>
+		<td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    </tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">
+			Please input your age:
+			</a><br>
+			<a style="background-color: #00ff00">
+			Bob
+			</a><br>
+			<a style="background-color: #00FFFF">
+			Your name is Bob.<br>
+			Have a good day!
+			</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">
+			Please input your name:
+			</a><br>
+			<a style="background-color: #00ff00">
+			Bob
+			</a><br>
+			<a style="background-color: #00FFFF">
+			Your&nbspname&nbspis&nbspOptional("Bob").<br>
+			Have a good day!
+			</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/X8su7XaBuccaHFxxRY_5Pw?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/oSBPB-WzFFMdKNm0HqQlaA?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	So if closer to our 1-st goal where we, as an user, should choice between <b>rock</b>, <b>paper</b> or <b>scissors</b>, a part of the program might look like this:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspchoice:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userChoice = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("User&nbspchoice&nbspwas&nbsp$userChoice.")<br>
+			}
+	    </td>
+	    <td></td>
+	 	<td>
+	 		print("Please&nbspinput&nbspyour&nbspchoice:")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+		    let userChoice = readLine()<br>
+		    print("User&nbspchoice&nbspwas&nbsp\(userChoice).")		
+	 	</td>
+		<td></td>
+	</tr>
+	 <!-- Eempty row 2  
+	    <tr>
+		<td></td>
+	    <td>&nbsp</td>
+	    <td><pre> </pre></td>
+	    <td>&nbsp</td>
+	    <td></td>
+	    </tr>
+-->  
 
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User choice was rock.
+			</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User&nbspchoice&nbspwas&nbspOptional("rock").
 
+			</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Let's name this part of the program the <b>Part #1</b>.
+	<br><br>
+	Okay. We go on.
+	<br><br>
 
 
 
