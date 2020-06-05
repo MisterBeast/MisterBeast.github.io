@@ -2106,7 +2106,7 @@ opacity: 1;
 	<br>
 	Easy.
 	<br><br>
-	But, please pay attention that we cannot do the same things with Invariable-Pocket Commanders:
+	But, please pay attention to the fact that we cannot do the same things with Invariable-Pocket Commanders:
 		<br><br>
 <center>
 <table>
@@ -2600,7 +2600,7 @@ opacity: 1;
 <table>
     <!-- Code Row 1 -->
 	  <tr>
-	  	<td><a style="background-color: #ffff00">Optional("</a><a style="background-color: #00FFFF">9</a><a style="background-color: #ffff00">")</a><a style="background-color: #00FFFF">.</a></td>
+	  	<td><a style="background-color: #ffff00">Optional("</a><a style="background-color: #00FFFF">9</a><a style="background-color: #ffff00">")</a></td>
 	  </tr>
 </table>
 </center>
@@ -2757,7 +2757,7 @@ opacity: 1;
 	<br>
 	we with the Commander <a style="background-color: #99f599">readLine()</a> make the machine pause everything and become waiting for the user's input.
 	<br><br>
-	After the user inputs the number <b>9</b> and presses the <b>Enter</b> button on the keyboard we make the machine take the user's input and put it into the Invariable Pocket <a style="background-color: #d3d5ff">userInput</a>:
+	After the user inputs the number <b>9</b> and presses the <b>Enter</b> button on the keyboard we make the machine take this user's input and put it into the Invariable Pocket <a style="background-color: #d3d5ff">userInput</a>:
 	<br><br>
 <center>
 <table>
@@ -2860,7 +2860,7 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	 we make the machine print the string inside the quotes <a style="background-color: #00FFFF">"</a> <a style="background-color: #00FFFF">"</a>.
+	 we make the machine print that string inside the quotes <a style="background-color: #00FFFF">"</a> <a style="background-color: #00FFFF">"</a>.
 	<br><br>
 	By the <b>4-th string</b> of the code:
 	<br><br>
@@ -3155,16 +3155,16 @@ opacity: 1;
 
 	<fontHeading><center>Array of Pockets</center></fontHeading>
 	<font0>
-	As we already know, we can make the machine create a Pocket for storing an object like <b>Hello</b> or <b>5</b>:
+	As we already know, we can make the machine create a Pocket for storing an object like <b>Hello</b> or <b>5</b>, for example:
 	<br><br>
 	<center>
 <img src="pockets.png" width="40%">
 	</center>
 	<br>
-	But additionally, for storing a number of objects, we can also make the machine create the Pocket consisting of an Array of Pockets: 
+	But additionally, for storing a number of objects, we can also make the machine create a Pocket consisting of the Array of Pockets: 
 	<br><br>
 	<center>
-<img src="winter.png" width="50%">
+<img src="array.png" width="50%">
 	</center>
 	<br>	
 	By the way, the objects that are being stored in the Array are called Elements.
@@ -3172,12 +3172,17 @@ opacity: 1;
 	Each Element in the Array has its Index:
 	<br><br>
 	<center>
+<img src="array_index.png" width="50%">
+	</center>
+	Or:
+	<br><br>
+	<center>
 <img src="index.png" width="50%">
 	</center>
 	<br>
 	As we can see the funny thing about these Indexes is that the 1-st Element <b>Hello</b> has the Index <b><a style="color: red">0</a></b>, the 2-nd Element <b>Hi</b> has the Index <b><a style="color: red">1</a></b> and the 3-rd Element <b>Hey</b> has the Index <b><a style="color: red">2</a></b>.
 	<br><br>
-	However, it is very convenient since we can easily access any Element we want.
+	However, we will see that the indexing is very convenient since we can easily take (access) any Element we want.
 	<br><br>
 	Please take a look at this code:
 	<br><br>
@@ -3297,7 +3302,7 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	we access the first Element having the Index <a style="color: red"><b>0</b></a> (i.e. <a style="background-color: #ffff00">Hello</a>) and put this Element into the Invariable Pocket <a style="background-color: #d3d5ff">firstElement</a>.
+	we take (access) the first Element having the Index <a style="color: red"><b>0</b></a> (i.e. <a style="background-color: #ffff00">Hello</a>) and put this Element into the Invariable Pocket <a style="background-color: #d3d5ff">firstElement</a>.
 	<br><br>
 	By the <b>3-rd string</b> of code:
 	<br><br>
@@ -3418,26 +3423,255 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	<br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br>
-
-
+	Great.
+	<br><br>
 </font0>
 
 
+	<fontHeading><center>Methods</center></fontHeading>
+	<font0>
+	There is a special sort of Commanders called Methods. 
+	<br><br>
+	Interestingly, these Commanders (Methods) are invoked (called) in a very interesting way.
+	<br><br>
+	For example, there is the Method with the name <a style="background-color: #99f599">count</a> that makes the machine count the number of Elements in an Array:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(ourNumber)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>"]<br>
+		    let ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    print(ourNumber)	
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">3</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">3</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	As we can see from the code above, there is an Array having the 3 Elements: <a style="background-color: #ffff00">Yo</a>, <a style="background-color: #ffff00">Hi</a>, <a style="background-color: #ffff00">Hey</a>.
+	And the Method with name <a style="background-color: #99f599">count</a> makes the machine count the number of Elements in the Array. The number is 3.
+	<br><br>
+	In this case, the <a style="background-color: #ffd6ff">ourArray</a> is an object for the Method <a style="background-color: #99f599">count</a>:
+	<br><br>
+	<center>
+<img src="method0.png" width="40%">
+	</center>
+	<br>
+	Another example of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsparrayOf(<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">7</a>,&nbsp<a style="background-color: #ffff00">9</a>,&nbsp<a style="background-color: #ffff00">8</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspval ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(ourNumber)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp[<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">7</a>,&nbsp<a style="background-color: #ffff00">9</a>,&nbsp<a style="background-color: #ffff00">8</a>]<br>
+		    let&nbspourNumber&nbsp=&nbsp<a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    print(ourNumber)	
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">4</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="background-color: #00FFFF">4</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	The Method <a style="background-color: #99f599">count</a> is very useful, for example, when we have an Array with a large number of Elements.
+	<br><br>
+	Great.
+	<br><br>
+	Also, there is the Method <a style="background-color: #99f599">random()</a> that makes the machine take any random Element from an Array:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(Random)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    print(Random)	
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Every time while running the above code we will get a random result: whether <a style="background-color: #00FFFF">Yo</a> or <a style="background-color: #00FFFF">Hi</a> or <a style="background-color: #00FFFF">Hey</a>.
+	<br><br>
+	So if closer to our 1-st goal where the machine should choice between whether <b>rock</b> or <b>paper</b> or <b>scissors</b>, a part of our goal program might look like this:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">rock</a>",&nbsp"<a style="background-color: #ffff00">paper</a>", "<a style="background-color: #ffff00">scissors</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprint(Random)<br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">rock</a>",&nbsp"<a style="background-color: #ffff00">paper</a>", "<a style="background-color: #ffff00">scissors</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    print(Random)	
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Let's name this part of our goal program the <b>Part #2</b>.
+	<br><br>
+	So together, the <b>Part #1</b> and <b>Part #2</b> of our goal program might look like this:
+	<br><br>
+	<b><a style="background-color: #ffff00">The combined code</a></b>
+	<br><br>
+	Of course, before running the above code, please input the so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
+	<br><br>
+	So we have the <b>Part #1</b> and <b>Part #2</b> of our goal program combined.
+	<br><br>
+	Great.
+	<br><br>
+	We go on.
+	<br><br>
+
+
+
+
+<!--
+	In simple words, first the object goes, next the dot goes, next the Method goes:
+	<br><br>
+	<center>
+<img src="method.png" width="50%">
+	</center>
+	<br>
+	<br><br>
+	Spend a little time playing with the methods to learn and understand what they do.
+
+-->
+	<br><br>
+	</font0>
+
+<!--
+
+In simple words, we might say that the the Commander (Method) count takes the object ourArray and count the number of Elements there:
+	<br><br>
+
+	Really, as we can see, we call (invoke) Commander (Method) named count in that interesting way:
+	<br><br>
+	pictute #1
+	<br><br>
+-->
+<br><br><br><br><br><br><br><br><br><br><br><br>
 <center>
 
 <center>
