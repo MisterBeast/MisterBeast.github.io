@@ -220,7 +220,7 @@ opacity: 1;
 	<br><br>
 	<fontHeading><center>First Understandable</center></fontHeading>
 	<div class="d"><br>
-	<font0>I practice redundancy throughout this one-page, interactive book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. I hope it is the first easily understandable programming book for girls and boys age 8+. 
+	<font0>I practice redundancy throughout this one-page, interactive book, explaining the same things several times and using simple words to maximize the chance that you will understand everything well. So I hope it is the first easily understandable programming book for girls and boys age 8+. 
 	<br><br>
 	The best entry point for anyone who wants to start learning programming.
 	<br><br>
@@ -912,7 +912,7 @@ opacity: 1;
 	</font0>
 
 	<fontHeading><center>Please don’t memorize anything</center></fontHeading>
-	<font0>By the way, don't struggle to memorize anything here too hard. You can use this book as a reference. There is not a big need to keep something in mind when you can always reach it online in seconds.
+	<font0>By the way, don't struggle too hard to memorize anything here. You can use this book as a reference. There is not a big need to keep something in mind when you can always reach it online in seconds.
 	<br><br>
 	</font0>
 
@@ -3128,7 +3128,6 @@ opacity: 1;
 			</a><br>
 			<a style="background-color: #00FFFF">
 			User&nbspchoice&nbspis&nbspOptional("rock").
-
 			</a>
 		</td>
 	    <td></td>
@@ -3563,11 +3562,19 @@ opacity: 1;
     <tr>
 		<td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> 
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey</a>
 		</td>
 	    <td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Yo</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hi</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">Hey</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional("Yo")</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional("Hi")</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Optional("Hey")</a>
 		</td>
 	    <td></td>
     </tr>
@@ -3582,9 +3589,9 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	Every time while running the above code we will get a random result: whether <a style="background-color: #00FFFF">Yo</a> or <a style="background-color: #00FFFF">Hi</a> or <a style="background-color: #00FFFF">Hey</a>.
+	Every time while running the above code we will get a random result: whether <a style="background-color: #00FFFF">Yo</a> or <a style="background-color: #00FFFF">Hi</a> or <a style="background-color: #00FFFF">Hey</a>. Try It Yourself.
 	<br><br>
-	So if closer to our 1-st goal where the machine should choice between whether <b>rock</b> or <b>paper</b> or <b>scissors</b>, a part of our goal program might look like this:
+	So if closer to our 1-st goal where the machine (bot) should choice between whether <b>rock</b> or <b>paper</b> or <b>scissors</b>, a part of our goal program might look like this:
 	<br><br>
 <center>
 <table>
@@ -3593,16 +3600,18 @@ opacity: 1;
 	  	<td></td>
 	    <td>
 	    	fun&nbspmain()&nbsp{<br>
-		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">rock</a>",&nbsp"<a style="background-color: #ffff00">paper</a>", "<a style="background-color: #ffff00">scissors</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">rock</a>",&nbsp"<a style="background-color: #ffff00">paper</a>",
+		    <br>&nbsp&nbsp&nbsp&nbsp"<a style="background-color: #ffff00">scissors</a>")<br>
 		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
-		    &nbsp&nbsp&nbsp&nbspprint(Random)<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Bot&nbspchoice&nbspis&nbsp$Random.")
+		    <br>
 			}
 	    </td>
 	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 	 	<td>
 	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">rock</a>",&nbsp"<a style="background-color: #ffff00">paper</a>", "<a style="background-color: #ffff00">scissors</a>"]<br>
 		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
-		    print(Random)	
+		    print("Bot&nbspchoice&nbspis&nbsp\(Random).")	
 	 	</td>
 		<td></td>
 	</tr>
@@ -3610,11 +3619,19 @@ opacity: 1;
     <tr>
 		<td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbsprock.</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbsppaper.</a> 
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbspscissors.</a>
 		</td>
 	    <td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbspOptional("rock").</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbspOptional("paper").</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Bot&nbspchoice&nbspis&nbspOptional("scissors").</a>
 		</td>
 	    <td></td>
     </tr>
@@ -3629,15 +3646,111 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	Let's name this part of our goal program the <b>Part #2</b>.
+	Of course, every time while running the above code we will also get a random result. Try It Yourself.
 	<br><br>
-	So together, the <b>Part #1</b> and <b>Part #2</b> of our goal program might look like this:
+	Let's name this above part of our goal program the <b>Part #2</b>.
 	<br><br>
-	<b><a style="background-color: #ffff00">The combined code</a></b>
+	So together the <b>Part #1</b> and <b>Part #2</b> of our goal program might look like this:
 	<br><br>
-	Of course, before running the above code, please input the so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+		<td></td>
+	 	<td>
+	    	fun&nbspmain()&nbsp{<br>
+
+			&nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspchoice:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userChoice = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("User&nbspchoice&nbspis&nbsp$userChoice.")
+		    <br><br>
+
+
+
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
+		    <br>&nbsp&nbsp&nbsp&nbsp"<a style="background-color: white">scissors</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: white">Array</a>.<a style="background-color: white">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Bot&nbspchoice&nbspis&nbsp$Random.")
+		    <br>
+			}
+	    </td>
+
+	    <td>&nbsp</td>
+	 	<td>
+			print("Please&nbspinput&nbspyour&nbspchoice:")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+		    let userChoice = readLine()<br>
+		    print("User&nbspchoice&nbspis&nbsp\(userChoice).")
+		    <br><br>
+
+
+
+	 		let&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsp["<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
+	 		<br>"<a style="background-color: white">scissors</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: white">Array</a>.<a style="background-color: white">randomElement()</a><br>
+		    print("Bot&nbspchoice&nbspis&nbsp\(Random).")
+		    <br>	
+	 	</td>
+		<td></td>
+	</tr>
+
+
+
+ <!-- Result Row 3
+    <tr>
+		<td></td>
+	    <td>
+	    	<a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User choice is rock.
+			</a><br>
+
+
+
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+	    <td>
+	    	<a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User&nbspchoice&nbspis&nbspOptional("rock").
+			</a><br>
+
+
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+    </tr>
+Link Row 4
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+-->
+
+</table>
+</center>
+	<br>
+	Or the same above code in the well familiar codeEditor below:
+
+    <!-- 5 with the result lud.gor ... -->
+<pre><iframe src="https://paiza.io/projects/e/pkoxuRIDwUrRWgGUHL-pYQ?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/xO1x5prea6c5R8q6ZGKWxQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+
+	Of course, <b>if you yourself want to do a random user's input</b>, every time before running the above code in the codeEditor please input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
 	<br><br>
-	So we have the <b>Part #1</b> and <b>Part #2</b> of our goal program combined.
+	So we have already had the <b>Part #1</b> and <b>Part #2</b> of our goal program combined.
 	<br><br>
 	Great.
 	<br><br>
@@ -3646,31 +3759,37 @@ opacity: 1;
 
 
 
-
-<!--
-	In simple words, first the object goes, next the dot goes, next the Method goes:
-	<br><br>
-	<center>
-<img src="method.png" width="50%">
-	</center>
-	<br>
-	<br><br>
-	Spend a little time playing with the methods to learn and understand what they do.
-
--->
 	<br><br>
 	</font0>
 
-<!--
 
-In simple words, we might say that the the Commander (Method) count takes the object ourArray and count the number of Elements there:
-	<br><br>
 
-	Really, as we can see, we call (invoke) Commander (Method) named count in that interesting way:
-	<br><br>
-	pictute #1
-	<br><br>
--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <center>
 
@@ -3697,8 +3816,6 @@ with Bitcoin via lightning:
 
 
 
-
-
 <font0>
 <br><br><br>
 	<center>
@@ -3706,8 +3823,6 @@ with Bitcoin via lightning:
 	<br><br>
 	It is the <a style="color: red"><b>book 1</b></a>. The <a style="color: red"><b>book 2</b></a> <i>pro</i> is <a href = "https://programmingforkidsreally.github.io/" target = "_blank">here</a>.
 	<br><br>
-
-
 
 	Programming is a wonderful attraction:
 	<br><br>
