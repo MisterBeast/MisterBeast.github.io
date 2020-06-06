@@ -3756,6 +3756,375 @@ Link Row 4
 	<br><br>
 	We go on.
 	<br><br>
+	</font0>
+
+	<fontHeading><center>Condition Commanders</center></fontHeading>
+	<font0>
+	<!--
+	There is a sort of Commanders called <b>Condition Commanders</b>.
+	<br><br>
+	-->
+	Thanks to some Commanders we can make the machine do one or another work, depending on some condition — on some circumstance.
+	<br><br>
+
+
+	Let's write a program where we make the machine check if some color happens to be green. 
+	<br><br>
+	And <b>if</b> so, the color happens to be green, the machine prints <a style="background-color: #00FFFF">Fine</a>.<br>
+	But <b>else</b>, if the color happens not to be green, the machine prints <a style="background-color: #00FFFF">Not too well</a>.
+	<br><br>
+	The Commander <a style="background-color: #ffd6ff">if else</a> will help us do it.
+	<br><br>
+	Please take a look at this code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == "green") {
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+			&nbsp&nbsp&nbsp&nbsp} else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    if (Random == "green") {
+		    &nbsp&nbspprint("Fine")<br>
+			} else {<br>
+			&nbsp&nbspprint("Not too well")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a> 
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Every time while running the above code we will get a certain result, depending on if the color happens to be green. Try It Yourself.
+	<br><br>
+	To figure out how the code works, please try learning from code.
+	<br><br>
+	<i><b>Explanations</b></i>
+	<br><br>
+	By the <b>1-st string</b> of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == "green") {
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+			&nbsp&nbsp&nbsp&nbsp} else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    if (Random == "green") {
+		    &nbsp&nbspprint("Fine")<br>
+			} else {<br>
+			&nbsp&nbspprint("Not too well")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
+	<br><br>
+	By the <b>2-nd string</b> of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == "green") {
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+			&nbsp&nbsp&nbsp&nbsp} else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    if (Random == "green") {
+		    &nbsp&nbspprint("Fine")<br>
+			} else {<br>
+			&nbsp&nbspprint("Not too well")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	we make the machine take any random Element from the Array and put this random Element into the Invariable Pocket <a style="background-color: #ffd6ff">Random</a>.
+	<br><br>
+	By the <a style="background-color: #ffd6ff">if { }</a> fragment of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">if</a> (Random == "green") <a style="background-color: #ffd6ff">{</a>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+			&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">}</a> else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    if (Random == "green") {
+		    &nbsp&nbspprint("Fine")<br>
+			} else {<br>
+			&nbsp&nbspprint("Not too well")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+</table>
+</center>
+	<br>
+	we make the machine check if the random Element chosen by the machine happens to equal the string <a style="background-color: #d3d5ff">green</a>. 
+	<br><br>
+	And if so, the machine prints <a style="background-color: #00FFFF">Fine</a>.
+	<br>
+	But else, if the color happens not to equal the string <a style="background-color: #d3d5ff">green</a>, the machine prints <a style="background-color: #00FFFF">Not too well</a>.
+	<br><br>
+	Great.
+	<br><br>
+	Another example of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf(<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">0</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == 5) {
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+			&nbsp&nbsp&nbsp&nbsp} else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp[<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">0</a>]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    if (Random == 5) {<br>
+		    &nbsp&nbspprint("Fine")<br>
+			} else {<br>
+			&nbsp&nbspprint("Not too well")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a> 
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Great.
+	<br><br>
+	So if even more closer to our 1-st goal, some significant part of our goal program might look like this:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+		<td></td>
+	 	<td>
+	    	fun&nbspmain()&nbsp{<br>
+
+			&nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspchoice:")<br>
+		    &nbsp&nbsp&nbsp&nbspval userChoice = readLine()<br>
+		    &nbsp&nbsp&nbsp&nbspprintln("User&nbspchoice&nbspis&nbsp$userChoice.")
+		    <br><br>
+
+
+
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
+		    <br>&nbsp&nbsp&nbsp&nbsp"<a style="background-color: white">scissors</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: white">Array</a>.<a style="background-color: white">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspprintln("Bot&nbspchoice&nbspis&nbsp$Random.")
+		    <br><br>
+		    &nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">if</a> (userChoice == Random) <a style="background-color: #ffd6ff">{</a>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Parity.")<br>
+			&nbsp&nbsp&nbsp&nbsp<a style="background-color: #ffd6ff">}</a> else {<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not Parity.")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+
+	    <td>&nbsp</td>
+	 	<td>
+			print("Please&nbspinput&nbspyour&nbspchoice:")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
+		    let userChoice = readLine()<br>
+		    print("User&nbspchoice&nbspis&nbsp\(userChoice).")
+		    <br><br>
+
+
+
+	 		let&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsp["<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
+	 		<br>"<a style="background-color: white">scissors</a>"]<br>
+		    let&nbspRandom&nbsp=&nbsp<a style="background-color: white">Array</a>.<a style="background-color: white">randomElement()</a><br>
+		    print("Bot&nbspchoice&nbspis&nbsp\(Random).")
+		    <br><br>
+		    <a style="background-color: #ffd6ff">if</a> (userChoice == Random) <a style="background-color: #ffd6ff">{</a>
+		    &nbsp&nbspprintln("Parity.")<br>
+			<a style="background-color: #ffd6ff">}</a> else {<br>
+			&nbsp&nbspprintln("Not Parity.")<br>
+			}	
+	 	</td>
+		<td></td>
+	</tr>
+
+
+
+ <!-- Result Row 3
+    <tr>
+		<td></td>
+	    <td>
+	    	<a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User choice is rock.
+			</a><br>
+
+
+
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+	    <td>
+	    	<a style="background-color: #00FFFF">
+			Please input your choice:
+			</a><br>
+			<a style="background-color: #00ff00">
+			rock
+			</a><br>
+			<a style="background-color: #00FFFF">
+			User&nbspchoice&nbspis&nbspOptional("rock").
+			</a><br>
+
+
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">rock</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">paper</a> <a style="color: gray">or</a> <a style="background-color: #00FFFF">scissors</a>
+		</td>
+	    <td></td>
+    </tr>
+Link Row 4
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+-->
+
+</table>
+</center>
+	<br>
+	Or the same above code in the codeEditor below:
+
+    <!-- 5 with the result lud.gor ... -->
+<pre><iframe src="https://paiza.io/projects/e/pkoxuRIDwUrRWgGUHL-pYQ?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/xO1x5prea6c5R8q6ZGKWxQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+
+	Of course, <b>if you yourself want to do a random user's input</b>, every time before running the above code in the codeEditor please input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
+	<br><br>
+	Absolutely great.
 
 
 
@@ -3765,8 +4134,298 @@ Link Row 4
 
 
 
+	<fontHeading><center>Matching Commander</center></fontHeading>
+	<font0>
+		<!--
+	The Matching Commander <b>when</b>/<b>switch</b> just like the if else Commander is a subsort of Condition Commanders.
+	<br><br>
+	-->
+	Suppose we have a refrigerator:
+	<br><br>
+	<center>
+<img src="ref.png" width= "20%">
+	</center>
+	<br>
+	And someone randomly puts one of 2 drinks into the refrigerator — whether Fanta or Sprite — but sometimes may put any unknown drink:
+	<br><br>
+	<center>
+<img src="drinks.png" width= "50%">
+	</center>
+	<br>
+	Let's write a program that makes the machine check if in the refrigerator there happens to be whether Fanta or Sprite or something else, and depending on what happens to be in there, makes the machine do some specific work.
+	<br><br>
+	The Commander <a style="background-color: #ffd6ff">when</a>/<a style="background-color: #ffd6ff">switch</a> will help us do it.
+	<br><br>
+	Please take a look at this code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    &nbsp&nbsp&nbsp&nbsp"<a style="background-color: #ffff00">Tmarra</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval drink = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspwhen(drink) {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Fanta" -> print("Good, Fanta")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Sprite" -> print("Nice, Sprite")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelse -> print("unknown drink")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    "<a style="background-color: #ffff00">Tmarra</a>"]<br>
+		    let&nbspdrink&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    switch drink {<br>
+		    case&nbsp"Fanta":&nbspprint("Good,&nbspFanta")<br>
+			case "Sprite": print("Nice, Sprite")<br>
+			default: print("unknown drink")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	Every time while running the above code we will get a certain result, depending on what drink is in the refrigerator. Try It Yourself.
+	<br><br>
+	To figure out how the code works, please try learning from code.
+	<br><br>
+	<i><b>Explanations</b></i>
+	<br><br>
+	By the <b>1-st string</b> of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    &nbsp&nbsp&nbsp&nbsp"<a style="background-color: #ffff00">Tmarra</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval drink = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspwhen(drink) {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Fanta" -> print("Good, Fanta")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Sprite" -> print("Nice, Sprite")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelse -> print("unknown drink")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    "<a style="background-color: #ffff00">Tmarra</a>"]<br>
+		    let&nbspdrink&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    switch drink {<br>
+		    case&nbsp"Fanta":&nbspprint("Good,&nbspFanta")<br>
+			case "Sprite": print("Nice, Sprite")<br>
+			default: print("unknown drink")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
+	<br><br>
+	By the <b>2-nd string</b> of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    &nbsp&nbsp&nbsp&nbsp"<a style="background-color: #ffff00">Tmarra</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval drink = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspwhen(drink) {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Fanta" -> print("Good, Fanta")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Sprite" -> print("Nice, Sprite")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelse -> print("unknown drink")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    "<a style="background-color: #ffff00">Tmarra</a>"]<br>
+		    let&nbspdrink&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    switch drink {<br>
+		    case&nbsp"Fanta":&nbspprint("Good,&nbspFanta")<br>
+			case "Sprite": print("Nice, Sprite")<br>
+			default: print("unknown drink")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	we make the machine take any random Element from the Array and put this random Element into the Invariable Pocket <a style="background-color: #ffd6ff">Random</a>.
+	<br><br>
+	By the <a style="background-color: #ffd6ff">if { }</a> fragment of code:
+	<br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+	<tr>
+	  	<td></td>
+	    <td>
+	    	fun&nbspmain()&nbsp{<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    &nbsp&nbsp&nbsp&nbsp"<a style="background-color: #ffff00">Tmarra</a>")<br>
+		    &nbsp&nbsp&nbsp&nbspval drink = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
+		    &nbsp&nbsp&nbsp&nbspwhen(drink) {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Fanta" -> print("Good, Fanta")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Sprite" -> print("Nice, Sprite")<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelse -> print("unknown drink")<br>
+			&nbsp&nbsp&nbsp&nbsp}
+		    <br>
+			}
+	    </td>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>",<br>
+		    "<a style="background-color: #ffff00">Tmarra</a>"]<br>
+		    let&nbspdrink&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+		    switch drink {<br>
+		    case&nbsp"Fanta":&nbspprint("Good,&nbspFanta")<br>
+			case "Sprite": print("Nice, Sprite")<br>
+			default: print("unknown drink")<br>
+			}
+	 	</td>
+		<td></td>
+	</tr>
+ <!-- Result Row 3 -->
+    <tr>
+		<td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+	    <td>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+		    <br>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">unknown drink</a>
+		</td>
+	    <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
+</table>
+</center>
+	<br>
+	we make the machine check if
 
-
+	<br><br>
+	</font0>
 
 
 
