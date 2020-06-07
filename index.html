@@ -1024,15 +1024,19 @@ opacity: 1;
 	<font0>
 	Please try learning from code.
 	<br><br>
-	In order to do so just imagine a situation in which you would not have any description (explanation) to code and should learn everything only from the code itself, analyzing the code and the result. Learning programming this way, step by step, is called learning from code.
+	In order to do so just imagine a situation in which you would not have any description (explanation) to code and should learn everything only from the code itself:<br>
+	· analyzing the code and the result,<br>
+	· playing around with the code.<br>
+	<br>
+	Learning programming this way, step by step, is called learning from code.
 	<br><br>
     This approach may be very effective.
     <br><br>
-	So you can practice the most extreme approach here: If some code is clear to you, ignore all of my explanations to it.
+	So you may practice the most extreme approach here: If some code is clear to you, ignore all of my explanations to it.
 	<br><br>
 	Try learning from code as much as possible.
 	<br><br>
-	Now take a look at this familiar code again:
+	Now, take a look at this familiar code again:
 	<br><br>
 <center>
 <table>
@@ -3181,7 +3185,7 @@ opacity: 1;
 	<br>
 	As we can see the funny thing about these Indexes is that the 1-st Element <b>Hello</b> has the Index <b><a style="color: red">0</a></b>, the 2-nd Element <b>Hi</b> has the Index <b><a style="color: red">1</a></b> and the 3-rd Element <b>Hey</b> has the Index <b><a style="color: red">2</a></b>.
 	<br><br>
-	However, we will see that the indexing is very convenient since we can easily take (access) any Element we want.
+	However, we will see that the indexing is very convenient since we can easily take (access) any Element from an Array.
 	<br><br>
 	Please take a look at this code:
 	<br><br>
@@ -3190,16 +3194,14 @@ opacity: 1;
     <!-- Code Row 1 -->
 	<tr>
 	  	<td></td>
-	    <td>
-	    	fun&nbspmain()&nbsp{<br>
+	    <td>fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbspourArray&nbsp=&nbsparrayOf("Hello",&nbsp"Hi",&nbsp"Hey")<br>
 		    &nbsp&nbsp&nbsp&nbspval firstElement = ourArray[<b><a style="color: red">0</a></b>]<br>
 		    &nbsp&nbsp&nbsp&nbspprint(firstElement)<br>
 			}
 	    </td>
 	    <td></td>
-	 	<td>
-	 		let&nbspourArray&nbsp=&nbsp["Hello",&nbsp"Hi",&nbsp"Hey"]<br>
+	 	<td>let&nbspourArray&nbsp=&nbsp["Hello",&nbsp"Hi",&nbsp"Hey"]<br>
 		    let firstElement = ourArray[<b><a style="color: red">0</a></b>]<br>
 		    print(firstElement)	
 	 	</td>
@@ -3230,9 +3232,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/20OJKTMMP9i3qYCa3QKCrA?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/tUjlA49R16MImED_sR2s8Q?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3268,7 +3270,7 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	we create the Array with the Elements <a style="background-color: #ffff00">Hello</a>, <a style="background-color: #ffff00">Hi</a>, <a style="background-color: #ffff00">Hey</a> and put this Array into the Invariable Pocket <a style="background-color: #99f599">ourArray</a></a>.
+	we create the Array with the Elements <a style="background-color: #ffff00">Hello</a>, <a style="background-color: #ffff00">Hi</a>, <a style="background-color: #ffff00">Hey</a> and put this whole Array into the Invariable Pocket <a style="background-color: #99f599">ourArray</a></a>.
 	<br><br>
 	Thanks to their order the Elements have the following Indexes:
 	<br><br>
@@ -3301,7 +3303,7 @@ opacity: 1;
 </table>
 </center>
 	<br>
-	we take (access) the first Element having the Index <a style="color: red"><b>0</b></a> (i.e. <a style="background-color: #ffff00">Hello</a>) and put this Element into the Invariable Pocket <a style="background-color: #d3d5ff">firstElement</a>.
+	we take (access) the first Element having the Index <a style="color: red"><b>0</b></a> (i.e. <a style="background-color: #ffff00">Hello</a>) from the Array and put this single Element into the Invariable Pocket <a style="background-color: #d3d5ff">firstElement</a>.
 	<br><br>
 	By the <b>3-rd string</b> of code:
 	<br><br>
@@ -3339,21 +3341,29 @@ opacity: 1;
     <!-- Code Row 1 -->
 	<tr>
 	  	<td></td>
-	    <td>
-	    	fun&nbspmain()&nbsp{<br>
+	    <td>fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbspourArray&nbsp=&nbsparrayOf("Hello",&nbsp"Hi",&nbsp"Hey")<br>
-		    &nbsp&nbsp&nbsp&nbspval thirdElement = ourArray[<b><a style="color: red">2</a></b>]<br>
-		    &nbsp&nbsp&nbsp&nbspprint(thirdElement)<br>
+		    &nbsp&nbsp&nbsp&nbspval firstElement = ourArray[<b><a style="color: red">2</a></b>]<br>
+		    &nbsp&nbsp&nbsp&nbspprint(firstElement)<br>
 			}
 	    </td>
 	    <td></td>
-	 	<td>
-	 		let&nbspourArray&nbsp=&nbsp["Hello",&nbsp"Hi",&nbsp"Hey"]<br>
-		    let thirdElement = ourArray[<b><a style="color: red">2</a></b>]<br>
-		    print(thirdElement)	
+	 	<td>let&nbspourArray&nbsp=&nbsp["Hello",&nbsp"Hi",&nbsp"Hey"]<br>
+		    let firstElement = ourArray[<b><a style="color: red">2</a></b>]<br>
+		    print(firstElement)	
 	 	</td>
 		<td></td>
 	</tr>
+	 <!-- Eempty row 2  
+	    <tr>
+		<td></td>
+	    <td>&nbsp</td>
+	    <td><pre> </pre></td>
+	    <td>&nbsp</td>
+	    <td></td>
+	    </tr>
+-->  
+
  <!-- Result Row 3 -->
     <tr>
 		<td></td>
@@ -3369,9 +3379,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/yuenqu7uml5_fjxvt7XE1g?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/LuemKETAuuINPiqEmCNcOg?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3414,9 +3424,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/VQ-gYBZc1j0G6InkMbBoVw?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/g0659D5CM7i-SPyaXNgu_A?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3440,16 +3450,14 @@ opacity: 1;
     <!-- Code Row 1 -->
 	<tr>
 	  	<td></td>
-	    <td>
-	    	fun&nbspmain()&nbsp{<br>
+	    <td>fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>")<br>
-		    &nbsp&nbsp&nbsp&nbspval ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    &nbsp&nbsp&nbsp&nbspval ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count()</a><br>
 		    &nbsp&nbsp&nbsp&nbspprint(ourNumber)<br>
 			}
 	    </td>
 	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-	 	<td>
-	 		let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>"]<br>
+	 	<td>let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Yo</a>",&nbsp"<a style="background-color: #ffff00">Hi</a>",&nbsp"<a style="background-color: #ffff00">Hey</a>"]<br>
 		    let ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
 		    print(ourNumber)	
 	 	</td>
@@ -3470,9 +3478,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/k5ds72fVzQekuBpwdGWN1g?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/h0mLA2KcINFYdRGl2FL-Zw?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3481,12 +3489,20 @@ opacity: 1;
 	As we can see from the code above, there is an Array having the 3 Elements: <a style="background-color: #ffff00">Yo</a>, <a style="background-color: #ffff00">Hi</a>, <a style="background-color: #ffff00">Hey</a>.
 	And the Method with name <a style="background-color: #99f599">count</a> makes the machine count the number of Elements in the Array. The number is 3.
 	<br><br>
-	In this case, the <a style="background-color: #ffd6ff">ourArray</a> is an object for the Method <a style="background-color: #99f599">count</a>:
+	In this case, the Pocket Commander <a style="background-color: #ffd6ff">ourArray</a> is an object for the Method <a style="background-color: #99f599">count</a>:
 	<br><br>
 	<center>
 <img src="method0.png" width="40%">
 	</center>
 	<br>
+	Pay attention to the very interesting way of calling (invoking) the Method: first the <a style="background-color: #ffd6ff">Object</a> goes, next the <b>dot</b> goes and next the <a style="background-color: #99f599">Method</a> goes:
+	<br><br>
+	<center>
+<img src="method.png" width="40%">
+	</center>
+	<br>
+	Very nice.
+	<br><br>
 	Another example of code:
 	<br><br>
 <center>
@@ -3494,16 +3510,14 @@ opacity: 1;
     <!-- Code Row 1 -->
 	<tr>
 	  	<td></td>
-	    <td>
-	    	fun&nbspmain()&nbsp{<br>
+	    <td>fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsparrayOf(<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">7</a>,&nbsp<a style="background-color: #ffff00">9</a>,&nbsp<a style="background-color: #ffff00">8</a>)<br>
-		    &nbsp&nbsp&nbsp&nbspval ourNumber = <a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
+		    &nbsp&nbsp&nbsp&nbspval&nbspourNumber&nbsp=&nbsp<a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count()</a><br>
 		    &nbsp&nbsp&nbsp&nbspprint(ourNumber)<br>
 			}
 	    </td>
-	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-	 	<td>
-	 		let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp[<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">7</a>,&nbsp<a style="background-color: #ffff00">9</a>,&nbsp<a style="background-color: #ffff00">8</a>]<br>
+	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+	 	<td>let&nbsp<a style="background-color: #ffd6ff">ourArray</a>&nbsp=&nbsp[<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">7</a>,&nbsp<a style="background-color: #ffff00">9</a>,&nbsp<a style="background-color: #ffff00">8</a>]<br>
 		    let&nbspourNumber&nbsp=&nbsp<a style="background-color: #ffd6ff">ourArray</a>.<a style="background-color: #99f599">count</a><br>
 		    print(ourNumber)	
 	 	</td>
@@ -3524,15 +3538,15 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/Htv-cn2IPKOwokEmxyOHwQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/JWiza4Cv2R2AZyOLvT5vVQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
 </center>
 	<br>
-	The Method <a style="background-color: #99f599">count</a> is very useful, for example, when we have an Array with a large number of Elements.
+	The Method <a style="background-color: #99f599">count</a> is very useful, for example, when we have an Array with a large number of Elements and want to count them.
 	<br><br>
 	Great.
 	<br><br>
@@ -3581,9 +3595,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/c4h85KSCyG6QvOlXLZor9w?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/f1hEcup71vYDOjKu-tTHwA?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3638,9 +3652,9 @@ opacity: 1;
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/AJYE7uta_eGPNIXNTamnJQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/ojs84deShhSc6vAP-8TMQQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -3745,11 +3759,15 @@ Link Row 4
 	<br>
 	Or the same above code in the well familiar codeEditor below:
 
-    <!-- 5 with the result lud.gor ... -->
-<pre><iframe src="https://paiza.io/projects/e/pkoxuRIDwUrRWgGUHL-pYQ?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/xO1x5prea6c5R8q6ZGKWxQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+    <!-- 5 with the result scienceforblondies@gm ... -->
+<pre><iframe src="https://paiza.io/projects/e/iGL5mysT4Dbs9OkTwArvrw?theme=clouds" width="50%" height="430" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/eur3AXkuKxozgGwbMkI6Rg?theme=clouds" width="49%" height="430" scrolling="no" seamless="seamless"></iframe></pre>
 
-	Of course, <b>if you yourself want to do a random user's input</b>, every time before running the above code in the codeEditor please input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
+	Of course, <b>if you yourself want to make a random user's choice</b>, every time before running the above code in the codeEditor you need to input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>:
 	<br><br>
+	<center>
+<img src="input_paper.png" width="100%">
+	</center>
+	<br>
 	So we have already had the <b>Part #1</b> and <b>Part #2</b> of our goal program combined.
 	<br><br>
 	Great.
@@ -3768,10 +3786,7 @@ Link Row 4
 	<br><br>
 
 
-	Let's write a program where we make the machine check if some color happens to be green. 
-	<br><br>
-	And <b>if</b> so, the color happens to be green, the machine prints <a style="background-color: #00FFFF">Fine</a>.<br>
-	But <b>else</b>, if the color happens not to be green, the machine prints <a style="background-color: #00FFFF">Not too well</a>.
+	Let's write a program that makes the machine check if some color happens to be green. And <b>if</b> so, the color happens to be green, the machine prints <a style="background-color: #00FFFF">Fine</a>. But <b>else</b>, if the color happens not to be green, the machine prints <a style="background-color: #00FFFF">Not too well</a>.
 	<br><br>
 	The Commander <a style="background-color: #ffd6ff">if else</a> will help us do it.
 	<br><br>
@@ -3786,22 +3801,21 @@ Link Row 4
 	    	fun&nbspmain()&nbsp{<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>")<br>
 		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
-		    &nbsp&nbsp&nbsp&nbspif (Random == "green") {
-		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == "green") {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
 			&nbsp&nbsp&nbsp&nbsp} else {<br>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
 			&nbsp&nbsp&nbsp&nbsp}
 		    <br>
 			}
 	    </td>
 	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-	 	<td>
-	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
+	 	<td>let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">green</a>",&nbsp"<a style="background-color: #ffff00">gray</a>"]<br>
 		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
-		    if (Random == "green") {
-		    &nbsp&nbspprint("Fine")<br>
+		    if (Random == "green") {<br>
+		    &nbsp&nbsp&nbsp&nbspprint("Fine")<br>
 			} else {<br>
-			&nbsp&nbspprint("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbspprint("Not too well")<br>
 			}
 	 	</td>
 		<td></td>
@@ -3825,15 +3839,15 @@ Link Row 4
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/wdYpYTLydb02wRjQUSwVBA?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/ivv5XibONia-1ggyo9ZlLg?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
 </center>
 	<br>
-	Every time while running the above code we will get a certain result, depending on if the color happens to be green. Try It Yourself.
+	Every time while running the above code we will get a certain result, depending on whether or not the color happens to be green. Try It Yourself.
 	<br><br>
 	To figure out how the code works, please try learning from code.
 	<br><br>
@@ -3873,7 +3887,7 @@ Link Row 4
 </table>
 </center>
 	<br>
-	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
+	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this whole Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
 	<br><br>
 	By the <b>2-nd string</b> of code:
 	<br><br>
@@ -3962,24 +3976,24 @@ Link Row 4
 	  	<td></td>
 	    <td>
 	    	fun&nbspmain()&nbsp{<br>
-		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf(<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">0</a>)<br>
+		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsparrayOf(<a style="background-color: #ffff00">3</a>,&nbsp<a style="background-color: #ffff00">4</a>,&nbsp<a style="background-color: #ffff00">5</a>)<br>
 		    &nbsp&nbsp&nbsp&nbspval&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">random()</a><br>
-		    &nbsp&nbsp&nbsp&nbspif (Random == 5) {
-		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Fine")<br>
+		    &nbsp&nbsp&nbsp&nbspif (Random == 5) {<br>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Excellent")<br>
 			&nbsp&nbsp&nbsp&nbsp} else {<br>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not too well")<br>
 			&nbsp&nbsp&nbsp&nbsp}
 		    <br>
 			}
 	    </td>
 	    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 	 	<td>
-	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp[<a style="background-color: #ffff00">5</a>,&nbsp<a style="background-color: #ffff00">0</a>]<br>
+	 		let&nbsp<a style="background-color: #ffd6ff">Array</a>&nbsp=&nbsp[<a style="background-color: #ffff00">3</a>,&nbsp<a style="background-color: #ffff00">4</a>,&nbsp<a style="background-color: #ffff00">5</a>]<br>
 		    let&nbspRandom&nbsp=&nbsp<a style="background-color: #ffd6ff">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
 		    if (Random == 5) {<br>
-		    &nbsp&nbspprint("Fine")<br>
+		    &nbsp&nbsp&nbsp&nbspprint("Excellent")<br>
 			} else {<br>
-			&nbsp&nbspprint("Not too well")<br>
+			&nbsp&nbsp&nbsp&nbspprint("Not too well")<br>
 			}
 	 	</td>
 		<td></td>
@@ -3988,13 +4002,13 @@ Link Row 4
     <tr>
 		<td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Excellent</a>
 		    <br>
 		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a> 
 		</td>
 	    <td></td>
 	    <td>
-		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Fine</a>
+		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Excellent</a>
 		    <br>
 		    <a style="color: gray">or</a> <a style="background-color: #00FFFF">Not too well</a>
 		</td>
@@ -4003,9 +4017,9 @@ Link Row 4
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/1VJCsL1qtd3j410oIAjanw?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/j4zrXX7qoZDr-xiYpnKsHQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -4120,10 +4134,14 @@ Link Row 4
 	Or the same above code in the codeEditor below:
 
     <!-- 5 with the result lud.gor ... -->
-<pre><iframe src="https://paiza.io/projects/e/pkoxuRIDwUrRWgGUHL-pYQ?theme=clouds" width="50%" height="410" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/xO1x5prea6c5R8q6ZGKWxQ?theme=clouds" width="49%" height="410" scrolling="no" seamless="seamless"></iframe></pre>
+<pre><iframe src="https://paiza.io/projects/e/FCv6WyXsBsyYvbAJ-jX4HA?theme=clouds" width="50%" height="510" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/AqFJ-ZnRRrwMq6ssK9l5Og?theme=clouds" width="49%" height="510" scrolling="no" seamless="seamless"></iframe></pre>
 
-	Of course, <b>if you yourself want to do a random user's input</b>, every time before running the above code in the codeEditor please input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>.
+	Of course, <b>if you yourself want to make a random user's choice</b>, every time before running the above code in the codeEditor you need to input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>:
 	<br><br>
+	<center>
+<img src="input_paper.png" width="100%">
+	</center>
+	<br>
 	Absolutely great.
 
 
@@ -4212,9 +4230,9 @@ Link Row 4
   <!-- Link Row 4 -->
     <tr>
 		<td></td>
-	    <td><a href = "https://paiza.io/projects/VbmR_6l9H05ViE9do6LGNQ?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/4n8vxep6MSi2plGsJm6hyA?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
-	    <td><a href = "https://paiza.io/projects/zuAc0ZUhSSzOrUnE-4VquQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td><a href = "https://paiza.io/projects/qKc6_8Hhy3r9QsShq650xQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
 	    <td></td>
     </tr>
 </table>
@@ -4290,7 +4308,7 @@ Link Row 4
 </table>
 </center>
 	<br>
-	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
+	we make the machine create the Array with the Elements <a style="background-color: #ffff00">green</a>, <a style="background-color: #ffff00">gray</a> and put this whole Array into the Invariable Pocket <a style="background-color: #ffd6ff">Array</a>.
 	<br><br>
 	By the <b>2-nd string</b> of code:
 	<br><br>
