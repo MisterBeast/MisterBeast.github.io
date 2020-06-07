@@ -15,6 +15,9 @@
 
 <!-- Style -->
 <style>
+
+.pointer {cursor: pointer;}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -2615,6 +2618,7 @@ opacity: 1;
 	<br><br>
 <center>
 <table>
+    <!-- Code Row 1 -->
 	<tr>
 	  	<td></td>
 	    <td>
@@ -2634,7 +2638,15 @@ opacity: 1;
 	 	</td>
 		<td></td>
 	</tr>
-	<!-- Result Row 3 -->
+	 <!-- Eempty row 2 -->   
+	    <tr>
+		<td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    <td>&nbsp</td>
+	    </tr>
+ <!-- Result Row 3 -->
     <tr>
 		<td></td>
 	    <td>
@@ -2664,12 +2676,29 @@ opacity: 1;
 		</td>
 	    <td></td>
     </tr>
+  <!-- Link Row 4 -->
+    <tr>
+		<td></td>
+	    <td><a href = "https://paiza.io/projects/60-65iAVbRmt46yNLJe_cw?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+	    <td><a href = "https://paiza.io/projects/vSfpfMmVEfVHtY131jucEQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+	    <td></td>
+    </tr>
 </table>
 </center>
+	</div>
 	<br>
 	To figure out how the code works, please try learning from code.
 	<br><br>
-	<i><b>Explanations</b></i>
+
+	<button onclick="myFunction()">
+		<fontBig class="pointer">
+			<i><b>Click this to show Explanations</b></i>
+		</fontBig>
+	</button>
+<div id="myDIV" style="display: none">
+	<br>
+	<b>Explanations are below. Enjoy them  :)</b>
 	<br><br>
 	By the <b>1-st string</b> of the code:
 	<br><br>
@@ -2926,6 +2955,7 @@ opacity: 1;
  	<br><br>	
 	This is it.
 	<br><br>
+
 	So our whole example looks the following:
 	<br><br>
 <center>
@@ -2998,7 +3028,9 @@ opacity: 1;
     </tr>
 </table>
 </center>
-	<br>
+
+</div>
+	<br><br>
 	Once again, please click this <b>Try It Yourself</b> button to play around with the code! Being in the codeEditor, you might change something in your code and get a new result while running. Playing with code is both interesting and extremely useful for becoming a cool coder. 😎🔥
 	<br><br>
 	A program working with the user's input is a lot more interesting since it is interactive and, in a way, more alive.
@@ -4520,6 +4552,17 @@ with Bitcoin via lightning:
 </tr>
 </table>
 </center>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
