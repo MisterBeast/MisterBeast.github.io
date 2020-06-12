@@ -4028,12 +4028,15 @@ text-align: left;
 </table>
 </center>
 	<br>
-	Or the same above code in the well familiar codeEditor below:
+	Or <b>the same above code</b> in the codeEditor below:
 
     <!-- 5 with the result scienceforblondies@gm ... -->
 <pre><iframe src="https://paiza.io/projects/e/iGL5mysT4Dbs9OkTwArvrw?theme=clouds" width="50%" height="430" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/eur3AXkuKxozgGwbMkI6Rg?theme=clouds" width="49%" height="430" scrolling="no" seamless="seamless"></iframe></pre>
 
-	Of course, <b>if you yourself want to make a random user's choice</b>, every time before running the above code in the codeEditor you need to input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>:
+	That result of running the above code has happened because previously at random I had made the user choice by inputing (typing) <b>rock</b>.
+  <br><br>
+  Of course, <b>to make your own user choice</b>, you need to, every time before running the above code in the above codeEditor, input (type) whether <b>rock</b> or <b>paper</b> or <b>scissors</b>. For example, like this:
+  <br><br>
 	<br><br>
 	<center>
 <img src="input_paper.png" width="100%">
@@ -4441,12 +4444,12 @@ So our whole code looks the following:
 </table>
 </center>
   <br>
-  Every time while running the above code we will get a certain result, depending on whether or not the color chosen randomly happens to be green. Try It Yourself.
+  Awesome.
   <br><br>
 
 
 
-	And  now again, if closer to our 1-st goal, some significant part of our goal program might look like this:
+	And  now again, if closer to our 1-st goal, some significant part of our goal program might look something like this:
 	<br><br>
 <center>
 <table>
@@ -4454,57 +4457,64 @@ So our whole code looks the following:
 	<tr>
 		<td></td>
 	 	<td>
-	    	fun&nbspmain()&nbsp{<br>
-
-			&nbsp&nbsp&nbsp&nbspprintln("Please&nbspinput&nbspyour&nbspchoice:")<br>
-		    &nbsp&nbsp&nbsp&nbspval userChoice = readLine()<br>
-		    &nbsp&nbsp&nbsp&nbspprintln("User&nbspchoice&nbspis&nbsp$userChoice.")
-		    <br><br>
-
-
-
-		    &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
-		    <br>&nbsp&nbsp&nbsp&nbsp"<a style="background-color: white">scissors</a>")<br>
-		    &nbsp&nbsp&nbsp&nbspval Random = <a style="background-color: white">Array</a>.<a style="background-color: white">random()</a><br>
-		    &nbsp&nbsp&nbsp&nbspprintln("Bot&nbspchoice&nbspis&nbsp$Random.")
-		    <br><br>
-		    &nbsp&nbsp&nbsp&nbsp<a style="background-color: #FFD851">if</a> (userChoice == Random) <a style="background-color: #FFD851">{</a>
-		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Parity.")<br>
-			&nbsp&nbsp&nbsp&nbsp<a style="background-color: #FFD851">}</a> else {<br>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Not Parity.")<br>
-			&nbsp&nbsp&nbsp&nbsp}
-		    <br>
-			}
+    
+    fun main() {<br>
+    &nbsp&nbsp&nbsp&nbspprintln("Please input your choice:")<br>
+    &nbsp&nbsp&nbsp&nbspval userChoice = readLine()<br>
+    &nbsp&nbsp&nbsp&nbspprintln("User choice is $userChoice.")<br>
+    <br>
+    &nbsp&nbsp&nbsp&nbspval Array = arrayOf("rock", "paper", <br>
+    &nbsp&nbsp&nbsp&nbsp"scissors")<br>
+    &nbsp&nbsp&nbsp&nbspval botChoice = Array.random()<br>
+    &nbsp&nbsp&nbsp&nbspprintln("Bot choice is $botChoice.")<br>
+    <br>
+    &nbsp&nbsp&nbsp&nbspif (userChoice == botChoice) {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("Parity. No matter what.")<br>
+    &nbsp&nbsp&nbsp&nbsp} else if (userChoice == "rock") {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("No&nbspParity.&nbspUser&nbspchoice&nbspis&nbsprock.")<br>
+    &nbsp&nbsp&nbsp&nbsp} else if (userChoice == "paper") {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("No Parity. User choice is paper.")<br>
+    &nbsp&nbsp&nbsp&nbsp} else if (userChoice == "scissors") {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspprintln("No&nbspParity.&nbspUser&nbspchoice&nbspis<br>
+    scissors.")<br>
+    &nbsp&nbsp&nbsp&nbsp}<br>
+    }
 	    </td>
 
 	    <td>&nbsp</td>
 	 	<td>
-			print("Please&nbspinput&nbspyour&nbspchoice:")&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>
-		    let userChoice = readLine()<br>
-		    print("User&nbspchoice&nbspis&nbsp\(userChoice).")
-		    <br><br>
-	 		let&nbsp<a style="background-color: white">Array</a>&nbsp=&nbsp["<a style="background-color: white">rock</a>",&nbsp"<a style="background-color: white">paper</a>",
-	 		<br>"<a style="background-color: white">scissors</a>"]<br>
-		    let&nbspRandom&nbsp=&nbsp<a style="background-color: white">Array</a>.<a style="background-color: white">randomElement()</a><br>
-		    print("Bot&nbspchoice&nbspis&nbsp\(Random).")
-		    <br><br>
-		    <a style="background-color: #FFD851">if</a> (userChoice == Random) <a style="background-color: #FFD851">{</a>
-		    &nbsp&nbspprintln("Parity.")<br>
-			<a style="background-color: #FFD851">}</a> else {<br>
-			&nbsp&nbspprintln("Not Parity.")<br>
-			}	
+		print("Please input your choice:")<br>           
+    let userChoice = readLine()<br>
+    print("User choice is \(userChoice).")<br>
+    <br>
+    let Array = ["rock", "paper", <br>
+    "scissors"]<br>
+    let&nbspbotChoice&nbsp=&nbspArray.randomElement()<br>
+    print("Bot choice is \(botChoice).")<br>
+    <br>
+    if (userChoice == botChoice) {<br>
+        print("Parity. No matter what.")<br>
+    } else if (userChoice == "rock") {<br>
+        print("No Parity. User choice is rock.")<br>
+    } else if (userChoice == "paper") {<br>
+        print("No Parity. User choice is paper.")<br>
+    } else if (userChoice == "scissors") {<br>
+    &nbsp&nbsp&nbsp&nbspprint("No&nbspParity.&nbspUser&nbspchoice&nbspis<br>scissors.")<br>
+    }<br>
+
 	 	</td>
 		<td></td>
 	</tr>
 </table>
 </center>
 	<br>
-	Or the same above code in the codeEditor below:
+	Or <b>the same above code</b> in the codeEditor below:
 
     <!-- 5 with the result lud.gor ... -->
-<pre><iframe src="https://paiza.io/projects/e/FCv6WyXsBsyYvbAJ-jX4HA?theme=clouds" width="50%" height="510" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/AqFJ-ZnRRrwMq6ssK9l5Og?theme=clouds" width="49%" height="510" scrolling="no" seamless="seamless"></iframe></pre>
-
-	Of course, <b>to do the random user's choice</b>, we need to, every time before running the above code in the above codeEditor, input (type) this so-called user's input: whether <b>rock</b> or <b>paper</b> or <b>scissors</b>. For example, like this:
+<pre><iframe src="https://paiza.io/projects/e/0kBiYXBZVY0c1r1A01P77Q?theme=clouds" width="50%" height="510" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/t7kxEturSf78LDLfULLHjA?theme=clouds" width="49%" height="510" scrolling="no" seamless="seamless"></iframe></pre>
+  That result of running the above code has happened because previously at random I had made the user  choice by inputing (typing) <b>rock</b>.
+  <br><br>
+  Of course, <b>to make your own user choice</b>, you need to, every time before running the above code in the above codeEditor, input (type) whether <b>rock</b> or <b>paper</b> or <b>scissors</b>. For example, like this:
 	<br><br>
 	<center>
 <img src="input_paper.png" width="100%">
@@ -4830,6 +4840,8 @@ So our whole code looks the following:
 
 	<br><br>
   Bla bla bla
+  <br><br>
+  Almost there.
 	<br><br>
   </font0>
 
