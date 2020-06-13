@@ -4060,11 +4060,11 @@ text-align: left;
   </font0>
 
 
-  <fontHeading><center>Condition Commander if else</center></fontHeading>
+  <fontHeading><center>Condition Commander <a style="color: black">if-else</a></center></fontHeading>
   <font0>
 	Let's write a program that makes the machine check if some color happens to be green. And <b>if</b> so, the color really happens to be green, the machine prints <a style="background-color: #00FFFF">Fine, it is green</a>. But <b>else</b>, if the color happens not to be green, the machine prints <a style="background-color: #00FFFF">Not well</a>.
 	<br><br>
-	The Commander <a style="background-color: #FFD851">if else</a> will help us do it.
+	The Commander <b>if-else</b> will help us do it.
 	<br><br>
 	Please take a look at this code:
 	<br><br>
@@ -4536,7 +4536,7 @@ So our whole code looks the following:
 
 
 
-	<fontHeading><center>Condition Commander when/switch</center></fontHeading>
+	<fontHeading><center>Condition Commander <a style="color: black">when</a><a style="color: lightgray">/</a><a style="color: black">switch</a></center></fontHeading>
 	<font0>
 		<!--
 	The Matching Commander <b>when</b>/<b>switch</b> just like the if else Commander is a subsort of Condition Commanders.
@@ -4551,12 +4551,12 @@ So our whole code looks the following:
 	and someone randomly puts one of 2 drinks into this refrigerator — whether Fanta or Sprite — but sometimes they may put any unknown drink into the refrigerator:
 	<br><br>
 	<center>
-<img src="drinks.png" width= "50%">
+<img src="drinks.png" height = 155px>
 	</center>
 	<br>
-	Let's write a program that makes the machine check if in the refrigerator there happens to be whether Fanta or Sprite or something else, and depending on what happens to be in there, makes the machine do some specific work.
+	Let's write a program that makes the machine check <b>when</b> in the refrigerator there happens to be Fanta, <b>when</b> — Sprite and <b>when</b> — something else; and depending on what happens to be in there, the program makes the machine do some specific work.
 	<br><br>
-	The Commander <a style="background-color: #FFD851">when</a>/<a style="background-color: #FFD851">switch</a> will help us do it.
+	The Commander <b>when</b><a style="color: lightgray"><b>/</b></a><b>switch</b> will help us do it.
 	<br><br>
 	Please take a look at this code:
 	<br><br>
@@ -4841,8 +4841,79 @@ So our whole code looks the following:
 </div>
 
 	<br><br>
-  Bla bla bla
+  Great.
   <br><br>
+  Once more example.
+  <br><br>
+
+  Suppose we have the same refrigerator:
+  <br><br>
+  <center>
+<img src="ref.png" width= "20%">
+  </center>
+  <br>
+  and someone randomly puts one of 2 drinks into this refrigerator — whether Fanta or Sprite:
+  <br><br>
+  <center>
+<img src="drinks2.png" height = 155px>
+  </center>
+  <br>
+  Let's write a program that makes the machine check <b>when</b> in the refrigerator there happens to be Fanta and <b>when</b> — Sprite; and depending on what happens to be in there, the program makes the machine do some specific work.
+  <br><br>
+  The interesting thing is that in Kotlin in this example we may omit that so-called <b>default</b> case, but in Swift we cannot do the same:
+  <br><br>
+<center>
+<table>
+    <!-- Code Row 1 -->
+  <tr>
+      <td></td>
+      <td>
+        fun&nbspmain()&nbsp{<br>
+        &nbsp&nbsp&nbsp&nbspval&nbsp<a style="background-color: #FFD851">Array</a>&nbsp=&nbsparrayOf("<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>")<br>
+        &nbsp&nbsp&nbsp&nbspval drink = <a style="background-color: #FFD851">Array</a>.<a style="background-color: #99f599">random()</a><br>
+        &nbsp&nbsp&nbsp&nbspwhen(drink) {<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Fanta" -> print("Good, Fanta")<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Sprite" -> print("Nice, Sprite")<br>
+      }
+      </td>
+      <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+    <td><br>
+        let&nbsp<a style="background-color: #FFD851">Array</a>&nbsp=&nbsp["<a style="background-color: #ffff00">Fanta</a>",&nbsp"<a style="background-color: #ffff00">Sprite</a>"]<br>
+        let&nbspdrink&nbsp=&nbsp<a style="background-color: #FFD851">Array</a>.<a style="background-color: #99f599">randomElement()</a><br>
+        switch drink {<br>
+        case&nbsp"Fanta":&nbspprint("Good,&nbspFanta")<br>
+        <a style="background-color: lightgray">default</a>: print("Nice, Sprite")<br>
+      }
+    </td>
+    <td></td>
+  </tr>
+ <!-- Result Row 3 -->
+    <tr>
+    <td></td>
+      <td>
+        <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+        <br>
+        <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+    </td>
+      <td></td>
+      <td>
+        <a style="color: gray">or</a> <a style="background-color: #00FFFF">Good, Fanta</a>
+        <br>
+        <a style="color: gray">or</a> <a style="background-color: #00FFFF">Nice, Sprite</a>
+    </td>
+      <td></td>
+    </tr>
+  <!-- Link Row 4 -->
+    <tr>
+    <td></td>
+      <td><a href = "https://paiza.io/projects/4n8vxep6MSi2plGsJm6hyA?language=kotlin" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+      <td></td>
+      <td><a href = "https://paiza.io/projects/qKc6_8Hhy3r9QsShq650xQ?language=swift" target = "_blank">Try&nbspIt&nbspYourself</a></td></td>
+      <td></td>
+    </tr>
+</table>
+</center>
+  <br>
   Almost there.
 	<br><br>
   </font0>
@@ -4854,18 +4925,13 @@ So our whole code looks the following:
   <font0>
 
   At this point, you already have enough knowledge to understand this code:
-
-  
-  <br><br>
-  Bingo!
-  <br><br>
+    <!-- 5 with the result lud.gor ... -->
+<pre><iframe src="https://paiza.io/projects/e/6s23DJvCgp6E3zSNmTHx5w?theme=clouds" width="50%" height="510" scrolling="no" seamless="seamless"></iframe><iframe src="https://paiza.io/projects/e/7IcmrcTeD8nBzeVXoLgoUg?theme=clouds" width="49%" height="510" scrolling="no" seamless="seamless"></iframe></pre>
   If you do not understand some part of the code, please just reread the corresponding part of the book.
   <br><br>
   Now you can play this game <b>Rock&nbsp·&nbspPaper&nbsp·&nbspScissors</b> against the machine (computer).
   <br><br>
-  Congratulations!
-  <br><br>
-  So, throughout this book, you got an idea of basic concepts of programming.
+  So, through this book, you got an idea of basic concepts of programming.
   <br><br>
   To get the knowledge about  the majority of concepts of programming, please read the <a style="color: red"><b>book 2</b></a> <i>pro</i>. I hope it is the first easily understandable programming book of professional level for girls and boys age 8+.
   <br><br>
