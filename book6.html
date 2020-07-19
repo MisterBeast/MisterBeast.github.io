@@ -203,9 +203,124 @@ As our 1-st goal let's create a Artificial Neural Network that would help you de
 </center>
 <br>
 So within just minutes you will become able to create your first Artificial Neural Network that works. 
-	<br><br>
+<br><br>
+
+</font0>
+
+
+<fontHeading><center>Start</center></fontHeading>
+<font0>
+Suppose that for some reasons you have the following preferences:<br>
+· you go to the party if there are your best <b>friends</b> and there is <b>no rain</b> — regardless of whether there are <b>cocktails</b> or not:
+<br><br>
+<center>
+<img src="friends_1.png" height= 150px><br>
+<img src="rain_0.png" height= 150px><br>
+<img src="cocktails_3.png" height= 150px>
+</center>
+<br>
+· you go to the party if there are <b>cocktails</b> and there is <b>no rain</b> — regardless of whether there are your best <b>friends</b> or not:
+<br><br>
+<center>
+<img src="cocktails_1.png" height= 150px><br>
+<img src="rain_0.png" height= 150px><br>
+<img src="friends_3.png" height= 150px>
+</center>
+<br>
+·  if <b>it is raining</b> you go to the party only if there are both these things — <b>cocktails</b> and your best <b>friends</b>:
+<br><br>
+<center>
+<img src="rain_1.png" height= 150px><br>
+<img src="friends_1.png" height= 150px><br>
+<img src="cocktails_1.png" height= 150px>
+</center>
+<br>
+Okay.
+<br><br>
+Next, for the sake of understanding our life by the machine we will:<br>
+· convert the fact that there are your best friends into 1 <b>and</b> the fact that there aren’t your best friends into 0:
+<br><br>
+<center>
+<img src="friends1.png" height= 150px><br>
+<img src="friends0.png" height= 150px>
+</center>
+<br>
+· convert the fact that there are cocktails into 1 <b>and</b> the fact that there aren’t cocktails into 0:
+<br><br>
+<center>
+<img src="cocktails1.png" height= 150px><br>
+<img src="cocktails0.png" height= 150px>
+</center>
+<br>
+· convert  the fact that it is raining into 1
+convert  <b>and</b> the fact that there is no rain into 0:
+<br><br>
+<center>
+<img src="rain1.png" height= 150px><br>
+<img src="rain0.png" height= 150px>
+</center>
+<br>
+Okay.
+<br><br>
+So, for example, if we know that at the party there are the best friend, there aren’t cocktails and it isn’t raining then we would have the following:
+<br><br>
+<center>
+<img src="friends1.png" height= 150px><br>
+<img src="cocktails0.png" height= 150px><br>
+<img src="rain0.png" height= 150px>
+</center>
+<br>
+In programming, such facts converted into either 0 or 1 are called <b>Inputs</b>:
+<br><br>
+<center>
+<img src="case1.png" height= 400px>
+</center>
+<br>
+Next, the machine has to multiply each input by an individual multiplier:
+<br><br>
+<center>
+<img src="multiplier_clear.png" height= 400px>
+</center>
+<br>
+These multipliers are very important in AI. Finding these multipliers is one of the most important tasks while building an AI.
+<br>
+<br>
+Anyway, for educational purposes, let's suppose that we are given these multipliers:<br>
+· Multiplier 1 = &nbsp0.5<br>
+· Multiplier 2 = &nbsp0.5<br>
+· Multiplier 3 = -0.5<br>
+<br>
+Next, as we can see, the machine multiplies our inputs with their multipliers respectively and sums the results:<br><br>
+
+
+
+
+<center>
+<img src="sum.png" height= 400px>
+</center>
+<br>
+
+
+1 * 0.5 &nbsp&nbsp&nbsp      = 0.5<br>
+0 * 0.5 &nbsp&nbsp&nbsp      = 0.0<br>
+0 * (-0.5) = 0.0<br>
+---------------------<br>
+sum:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.5<br>
+<br><br>
+
+
+
+
+
+
+
+
 <br><pre>                                                                               </pre>
 </font0>
+
+
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <center>
