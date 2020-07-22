@@ -147,8 +147,7 @@ text-align: left;
 <br>
 <fontSmall>how to harness</fontSmall>
 <br>
-<fontLang>AI</fontLang>
-<br><br><br><br>		
+<fontLang>AI</fontLang>		
 </center>
 </td>
 <td>&nbsp</td>
@@ -159,7 +158,7 @@ text-align: left;
 </center>
 </div>
 
-<br><br>
+<br><br><br>
 <fontHeading><center>Best Entry Point</center></fontHeading>
 <div class="d"><br>
 <font0>
@@ -208,10 +207,16 @@ So within just minutes you will become able to create your first Artificial Neur
 </font0>
 
 
-<fontHeading><center>Start</center></fontHeading>
+<fontHeading><center>Fast Start</center></fontHeading>
 <font0>
-Suppose that for some reasons you have the following preferences:<br>
-· you go to the party if there are your best <b>friends</b> and there is <b>no rain</b> — regardless of whether there are <b>cocktails</b> or not:
+<!--
+First of all, let's get an idea about  what 
+a Neural Network is and how it works.
+-->
+So now we're going to build probably the simplest Neural Network that would help you make the decision of whether you go at the party, or you stay home.
+<br><br>
+Suppose that for some reasons, you have the following preferences:<br>
+· you always go to the party if there is your best <b>friend</b> and is <b>no rain</b> — regardless of whether there is <b>your favorite cocktail</b> or not:
 <br><br>
 <center>
 <img src="friends_1.png" height= 150px><br>
@@ -219,7 +224,7 @@ Suppose that for some reasons you have the following preferences:<br>
 <img src="cocktails_3.png" height= 150px>
 </center>
 <br>
-· you go to the party if there are <b>cocktails</b> and there is <b>no rain</b> — regardless of whether there are your best <b>friends</b> or not:
+· you always go to the party if there is <b>your favorite cocktail</b> and there is <b>no rain</b> — regardless of whether there is your best <b>friend</b> or not:
 <br><br>
 <center>
 <img src="cocktails_1.png" height= 150px><br>
@@ -227,7 +232,7 @@ Suppose that for some reasons you have the following preferences:<br>
 <img src="friends_3.png" height= 150px>
 </center>
 <br>
-·  if <b>it is raining</b> you go to the party only if there are both these things — <b>cocktails</b> and your best <b>friends</b>:
+· but if <b>it is raining</b> you always go to the party only if there are both your best <b>friend</b> and <b>your favorite cocktail</b>:
 <br><br>
 <center>
 <img src="rain_1.png" height= 150px><br>
@@ -237,15 +242,15 @@ Suppose that for some reasons you have the following preferences:<br>
 <br>
 Okay.
 <br><br>
-Next, for the sake of understanding our life by the machine we will:<br>
-· convert the fact that there are your best friends into 1 <b>and</b> the fact that there aren’t your best friends into 0:
+Next, for the sake of understanding our life by the machine we should:<br>
+· convert the fact that there is your best friend into 1 <b>and</b> the fact that there isn't your best friend into 0:
 <br><br>
 <center>
 <img src="friends1.png" height= 150px><br>
 <img src="friends0.png" height= 150px>
 </center>
 <br>
-· convert the fact that there are cocktails into 1 <b>and</b> the fact that there aren’t cocktails into 0:
+· convert the fact that there is your favorite cocktail into 1 <b>and</b> the fact that there isn't your favorite cocktail into 0:
 <br><br>
 <center>
 <img src="cocktails1.png" height= 150px><br>
@@ -262,7 +267,7 @@ convert  <b>and</b> the fact that there is no rain into 0:
 <br>
 Okay.
 <br><br>
-So, for example, if we know that at the party there are the best friend, there aren’t cocktails and it isn’t raining then we would have the following:
+So, for example, if we know that at the party there is your best friend, there isn't your favorite cocktail and it isn’t raining then we have the following:
 <br><br>
 <center>
 <img src="friends1.png" height= 150px><br>
@@ -270,27 +275,38 @@ So, for example, if we know that at the party there are the best friend, there a
 <img src="rain0.png" height= 150px>
 </center>
 <br>
-In programming, such facts converted into either 0 or 1 are called <b>Inputs</b>:
+In programming, such facts converted into numbers — either 0 or 1, for example — are called <b>Inputs</b>:
 <br><br>
 <center>
 <img src="case1.png" height= 400px>
 </center>
 <br>
-Next, the machine has to multiply each input by an individual multiplier:
+Next, the machine has to multiply each Input by an individual Multiplier:
 <br><br>
 <center>
 <img src="multiplier_clear.png" height= 400px>
 </center>
 <br>
-These multipliers are very important in AI. Finding these multipliers is one of the most important tasks while building an AI.
+Multiplier 1 = &nbsp0.5<br>
+Multiplier 2 = &nbsp0.5<br>
+Multiplier 3 = -0.5<br>
+<br>
+1 * 0.5 &nbsp&nbsp&nbsp&nbsp= 0.5<br>
+0 * 0.5 &nbsp&nbsp&nbsp      = 0.0<br>
+0 * (-0.5) = 0.0<br>
+<br>
+These Multipliers (0.5, 0.5, -0.5) are very important in building the AI. Finding such Multipliers is one of the most important tasks while building any AI.
 <br>
 <br>
-Anyway, for educational purposes, let's suppose that we are given these multipliers:<br>
-· Multiplier 1 = &nbsp0.5<br>
-· Multiplier 2 = &nbsp0.5<br>
-· Multiplier 3 = -0.5<br>
+Anyway, for educational purposes, let's suppose that we have already been given those Multipliers:
 <br>
-Next, as we can see, the machine multiplies our inputs with their multipliers respectively and sums the results:<br><br>
+Multiplier 1 = &nbsp0.5<br>
+Multiplier 2 = &nbsp0.5<br>
+Multiplier 3 = -0.5<br>
+<br>
+Okay.
+<br><br>
+Next, as we can see below, after the machine multiplies our Inputs with their specific Multipliers respectively, the machine sums the results:<br><br>
 
 
 
@@ -307,10 +323,97 @@ Next, as we can see, the machine multiplies our inputs with their multipliers re
 ---------------------<br>
 sum:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.5<br>
 <br><br>
+So, <b>sum</b> = 0.5.
+<br><br>
+Next, the machine puts this sum into the main formula looking this way:
+<br><br>
+<center>
+<img src="ai_mf.png" height= "100%">
+</center>
+<br>
+
+<center>
+<table>
+<tr>
+<td>&nbsp</td>
+<td>
 
 
+if&nbsp<b>sum</b>&nbsp>=&nbsp0.5&nbsp&nbsp——&nbsp&nbspI'd&nbsplike&nbspto&nbsprecommend&nbspyou&nbspto&nbspGO&nbspto&nbspthe&nbspparty,&nbspmy&nbsphost<br>
+if&nbsp<b>sum</b>&nbsp<&nbsp&nbsp&nbsp0.5&nbsp&nbsp——&nbsp&nbspI'd&nbsplike&nbspto&nbsprecommend&nbspyou&nbspto&nbspSTAY&nbsphome,&nbspmy&nbsphost<br>
+
+</td>
+<td>&nbsp</td>
+</tr>
+</table>
+</center>
+<br><br>
 
 
+As we can see, everything is easy!
+<br><br>
+If our sum is equal to or more than 0.5, then the machine says —— I'd like to recommend you to GO to the party, my host.
+<br><br>
+But else  (for example, if our sum is equal to 0), then the machine says —— I'd like to recommend you to STAY home, my host.
+
+<br><br>
+Since our sum is equal to 0.5 and, it means, the sum meets the condition that <b>If our sum is equal to or more than 0.5</b>, the machine will say: I'd like to recommend you  to GO to the party, my host.
+<br><br>
+<center>
+<img src="ai_full.png" width= "100%">
+</center>
+<br>
+Of course, when there are other Inputs then the recommendation may be completely other.
+<br><br>
+
+It is exactly the way how any AI works.
+<br><br>
+For now, you need to understand just some
+things.
+<br><br>
+<b>The 1st thing</b><br>
+There are some Inputs — some facts of life that may be converted (turned) into numbers — 1 or 0, for example.
+<br><br>
+<b>The 2nd thing</b><br>
+There are some Multipliers to multiply the Inputs by.
+<br><br>
+<b>The 3rd thing</b><br>
+There is some main Formula by which the machine makes its recommendation.
+<br><br>
+As we can see, the machine loves to work with numbers.
+<br><br>
+For this reason, let's agree to consider the recommendation to GO as 1 and the recommendation to STAY as 0.
+<br><br>
+So our first case:
+<br><br>
+<center>
+<img src="ai_full.png" width= "100%">
+</center>
+<br>
+might look like this:
+<br><br>
+<center>
+<img src="case_1.png" height= "100%">
+</center>
+<br>
+
+As we can see, the recommendation of the machine is also called <b>Output</b>.
+<br><br>
+So, for example, BLA BLA BLA
+<br><br>
+You can play aroind with our AI giving it different Inputs in each case.
+<br><br>
+It is one of ways how AI can work.
+<br><br>
+<center>
+<img src="ai_SCHEME.png" height= "100%">
+</center>
+<br>
+<br><br>
+<center>
+<img src="ai_sch2.png" height= "100%">
+</center>
+<br>
 
 
 
@@ -318,7 +421,9 @@ sum:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.5<br>
 <br><pre>                                                                               </pre>
 </font0>
 
+<br><br>
 
+<iframe height="600px" width="100%" src="https://repl.it/@SweSd/123?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 
 
