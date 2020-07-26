@@ -181,21 +181,32 @@ Things are changing fast.
 <br>
 <pre>                                                                               </pre>
 <center>
-<img src="city.png" width= 100%>
+<img src="city1.png" width= 100%>
 </center>
 <br>
 Probably, we are going to a world where each person will have an augmented brain. Their human brain augmented with artificial (machine) brain.
 <br><br>
-Indeed we already for now already have sort of a augmented brain. Since we can resort to the help of machines while thinking.
+For now, indeed, we already have sort of an augmented brain. Since we can resort to the help of machines while thinking. For example, you can already augmente your brain with additional possibilities while doing calculations, using your smartphone, tablet or laptop.
 <br><br>
-But in the future, we will not need to type numbers in order to do calculations, since it will be enough for us to just think of it.
+These were and are the first versions of Artificial Brains.
 <br><br>
+But now we wanted more. 
+<br><br>
+People now are able to really build Artificial Intelligence that may be self-educating, self-learning. 
+<br><br>
+For now we can already create the AI that can literally learn from facts of life and may be becoming really better throughout time without our participation. Only on its own.
+<br><br>
+So only the Artificial Brain that can learn on its own is called AI.
+<br><br>
+Probably, in the future, we will not even need to type something on the keyboard — for example, to type numbers for doing calculations —  since it will be enough for us to just think of it.
+<br><br>
+
 </font0>
 
 
 <fontHeading><center>Our first goal</center></fontHeading>
 <font0>
-As our 1-st goal let's create a Artificial Neural Network that would help you decide either you go at the party or not.
+As our 1-st goal let's create an Artificial Intelligence —  Artificial Neural Network — that would help you decide either you go at a party or not.
 <br><br>
 <center>
 <img src="ai.png" height= 300px>
@@ -203,20 +214,86 @@ As our 1-st goal let's create a Artificial Neural Network that would help you de
 <br>
 So within just minutes you will become able to create your first Artificial Neural Network that works. 
 <br><br>
-
 </font0>
 
 
-<fontHeading><center>Fast Start</center></fontHeading>
+<fontHeading><center>Simplest Math
+</center></fontHeading>
 <font0>
-<!--
-First of all, let's get an idea about  what 
-a Neural Network is and how it works.
--->
-So now we're going to build probably the simplest Neural Network that would help you make the decision of whether you go at the party, or you stay home.
+If you know math a little bit, you can skip this part over and go right away to the part <b style="color: #FF703E">Fast Start</b> which is <a href="book6.html#FastStart">here</a>.
 <br><br>
-Suppose that for some reasons, you have the following preferences:<br>
-· you always go to the party if there is your best <b>friend</b> and is <b>no rain</b> — regardless of whether there is <b>your favorite cocktail</b> or not:
+
+
+Imagine that you got 3 friends and you want to give 2 oranges to each friend.
+<br><br>
+How many oranges do you need?
+<br><br>
+Here we go:
+<br><br>
+<b>3(friends) * 2(oranges) = 6 oranges</b>
+<br><br>
+Okay, it is easy.
+<br><br>
+Imagine that you got 4 friends and you want to also give 2 oranges to each friend.
+<br><br>
+How many oranges do you need?
+<br><br>
+Here we go:
+<br><br>
+<b>4(friends) * 2(oranges) = 8 oranges</b>
+<br><br>
+So the formula to calculate oranges will be as follows:
+<br><br>
+<b>formula = friends * oranges</b>
+<br><br>
+So we might say that a formula is a method of doing something.
+<br><br>
+Or, in our case, a formula is a method of calculating something.
+<br><br>
+Imagine that your State (the USA, UK, Canada or other one) gives you, as a present, some coins every day. During a month.
+<br><br>
+The number of coins you get every specific day is calculated with some formula.
+<br><br>
+So you get:
+<br><br>
+<b>
+1st day = 1 * 1 = 1 coin<br>
+2nd day = 2 * 2 = 4 coins<br>
+3rd day = 3 * 3 * 3 = 27 coins<br>
+4th day = 4 * 4 * 4 * 4 = 256 coins<br></b>
+....<br>
+and so on.
+<br><br>
+We might also represent this aproach this way:
+<br><br><b>
+1st day = 1 * 1 = <b>1<sup>1</sup></b> = 1 coin<br>
+2nd day = 2 * 2 = <b>2<sup>2</sup></b> = 4 coins<br>
+3rd day = 3 * 3 * 3 = <b>3<sup>3</sup></b> = 27 coins<br>
+4th day = 4 * 4 * 4 * 4 = <b>4<sup>4</sup></b> = 256 coins<br></b>
+....<br>
+and so on.
+<br><br>
+So we might say that the formula used by the State looks like this:
+<br><br><b>
+coins = day<sup>day</sup></b>
+<br><br>
+It is easy.
+<br><br>
+</font0>
+
+
+<fontHeading id = "FastStart"><center>Fast Start</center></fontHeading>
+<font0>
+Now we're going to build probably the simplest Neural Network that would make its <b>recommendation</b> of either going to a party, or staying home.
+<br><br>
+<center>
+<img src="party.png" width= "100%">
+</center>
+<br>
+First of all, we need to get an idea about how a Neural Network works.
+<br><br>
+So, suppose that for some reasons, you have the following preferences about spontaneous parties:<br>
+· you always go to a party if there is your best <b>friend</b> and it is not <b>raining</b> — regardless of whether there is your favorite <b>cocktail</b> or not:
 <br><br>
 <center>
 <img src="friends_1.png" height= 150px><br>
@@ -224,7 +301,7 @@ Suppose that for some reasons, you have the following preferences:<br>
 <img src="cocktails_3.png" height= 150px>
 </center>
 <br>
-· you always go to the party if there is <b>your favorite cocktail</b> and there is <b>no rain</b> — regardless of whether there is your best <b>friend</b> or not:
+· you always go to a party if there is your favorite <b>cocktail</b> and it is not <b>raining</b> — regardless of whether there is your best <b>friend</b> or not:
 <br><br>
 <center>
 <img src="cocktails_1.png" height= 150px><br>
@@ -232,7 +309,7 @@ Suppose that for some reasons, you have the following preferences:<br>
 <img src="friends_3.png" height= 150px>
 </center>
 <br>
-· but if <b>it is raining</b> you always go to the party only if there are both your best <b>friend</b> and <b>your favorite cocktail</b>:
+· but if it is <b>raining</b> you always go to a party only if there are both your best <b>friend</b> and your favorite <b>cocktail</b>:
 <br><br>
 <center>
 <img src="rain_1.png" height= 150px><br>
@@ -242,23 +319,33 @@ Suppose that for some reasons, you have the following preferences:<br>
 <br>
 Okay.
 <br><br>
-Next, for the sake of understanding our life by the machine we should:<br>
-· convert the fact that there is your best friend into 1 <b>and</b> the fact that there isn't your best friend into 0:
+As we know, machines love to work with numbers.
+<br><br>
+For this reason, let's convert each <b>yes</b> into <b>1</b> and each <b>no</b> into <b>0</b>:
+<br><br>
+<center>
+<img src="10.png" height= 150px>
+</center>
+<br>
+
+
+
+So now what we are doing exactly is we:<br>
+· convert the fact that there is your best friend into <b>1</b> and the fact that there isn't your best friend into <b>0</b>:
 <br><br>
 <center>
 <img src="friends1.png" height= 150px><br>
 <img src="friends0.png" height= 150px>
 </center>
 <br>
-· convert the fact that there is your favorite cocktail into 1 <b>and</b> the fact that there isn't your favorite cocktail into 0:
+· convert the fact that there is your favorite cocktail into <b>1</b> and the fact that there isn't your favorite cocktail into <b>0</b>:
 <br><br>
 <center>
 <img src="cocktails1.png" height= 150px><br>
 <img src="cocktails0.png" height= 150px>
 </center>
 <br>
-· convert  the fact that it is raining into 1
-convert  <b>and</b> the fact that there is no rain into 0:
+· convert  the fact that it is raining into <b>1</b> and the fact that there is no rain into <b>0</b>:
 <br><br>
 <center>
 <img src="rain1.png" height= 150px><br>
@@ -267,7 +354,11 @@ convert  <b>and</b> the fact that there is no rain into 0:
 <br>
 Okay.
 <br><br>
-So, for example, if we know that at the party there is your best friend, there isn't your favorite cocktail and it isn’t raining then we have the following:
+By this simple trick we make the computer able to understand your human life absolutely well. 
+<br><br>
+It is just great.
+<br><br>
+So, for example, if we know that at the party there <b>is</b> your best <b>friend</b>, there <b>isn't</b> your favorite <b>cocktail</b> and it <b>isn’t raining</b> then we have the following:
 <br><br>
 <center>
 <img src="friends1.png" height= 150px><br>
@@ -275,38 +366,56 @@ So, for example, if we know that at the party there is your best friend, there i
 <img src="rain0.png" height= 150px>
 </center>
 <br>
-In programming, such facts converted into numbers — either 0 or 1, for example — are called <b>Inputs</b>:
+In programming, such facts of life converted into numbers — either 0 or 1, for example — are called <b>Inputs</b>:
 <br><br>
 <center>
 <img src="case1.png" height= 400px>
 </center>
 <br>
+Input1 = 1<br>
+Input2 = 0<br>
+Input3 = 0<br>
+<br>
+Okay.
+<br><br>
 Next, the machine has to multiply each Input by an individual Multiplier:
 <br><br>
 <center>
 <img src="multiplier_clear.png" height= 400px>
 </center>
+As we can see, the Multipliers are as follows:<br>
+Multiplier1 = &nbsp0.5<br>
+Multiplier2 = &nbsp0.5<br>
+Multiplier3 = -0.5<br>
 <br>
-Multiplier 1 = &nbsp0.5<br>
-Multiplier 2 = &nbsp0.5<br>
-Multiplier 3 = -0.5<br>
+So, we get the Product1, Product2 and Product3:
+<br><br>
+Product1 = Input1 * Multiplier1 = 1 * 0.5 &nbsp&nbsp&nbsp&nbsp= 0.5<br>
+Product2 = Input2 * Multiplier2 = 0 * 0.5 &nbsp&nbsp&nbsp      = 0.0<br>
+Product3 = Input3 * Multiplier3 = 0 * (-0.5) = 0.0<br>
 <br>
-1 * 0.5 &nbsp&nbsp&nbsp&nbsp= 0.5<br>
-0 * 0.5 &nbsp&nbsp&nbsp      = 0.0<br>
-0 * (-0.5) = 0.0<br>
+These Multipliers (0.5, 0.5, -0.5) are <b>very important</b> in working of our AI. 
+<br><br>
+These Multipliers (0.5, 0.5, -0.5) are <b>very important</b> since, as we will see further, precisely they do the whole work while making the recommendation.
+<br><br>
+<!--
+So, each Input has its own Multiplier showing the size of the Input's contribution into the recommendation.
+<br><br>
+In other words, each Multiplier shows the degree of importance of the Input while making the recommendation. 
+<br><br>
+-->
+Calculating such Multipliers — one Multiplier for each Input  — is the most important task while building any AI.
 <br>
-These Multipliers (0.5, 0.5, -0.5) are very important in building the AI. Finding such Multipliers is one of the most important tasks while building any AI.
 <br>
+Anyway, for educational purposes, let's suppose that we have already been given these Multipliers:
 <br>
-Anyway, for educational purposes, let's suppose that we have already been given those Multipliers:
-<br>
-Multiplier 1 = &nbsp0.5<br>
-Multiplier 2 = &nbsp0.5<br>
-Multiplier 3 = -0.5<br>
+Multiplier1 = &nbsp0.5<br>
+Multiplier2 = &nbsp0.5<br>
+Multiplier3 = -0.5<br>
 <br>
 Okay.
 <br><br>
-Next, as we can see below, after the machine multiplies our Inputs with their specific Multipliers respectively, the machine sums the results:<br><br>
+Next, as we can see below, the machine sums all the Products:<br><br>
 
 
 
@@ -317,74 +426,57 @@ Next, as we can see below, after the machine multiplies our Inputs with their sp
 <br>
 
 
-1 * 0.5 &nbsp&nbsp&nbsp      = 0.5<br>
-0 * 0.5 &nbsp&nbsp&nbsp      = 0.0<br>
-0 * (-0.5) = 0.0<br>
----------------------<br>
-sum:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.5<br>
+Sum = Product1 + Product2 + Product3 = 0.5 + 0 + 0 = 0.5
 <br><br>
-So, <b>sum</b> = 0.5.
+So, <b>Sum</b> = 0.5.
 <br><br>
-Next, the machine puts this sum into the main formula looking this way:
+Next, the machine puts the Sum into a Main Formula that may look like this:
 <br><br>
 <center>
 <img src="ai_mf.png" height= "100%">
 </center>
 <br>
-
-<center>
-<table>
-<tr>
-<td>&nbsp</td>
-<td>
-
-
-if&nbsp<b>sum</b>&nbsp>=&nbsp0.5&nbsp&nbsp——&nbsp&nbspI'd&nbsplike&nbspto&nbsprecommend&nbspyou&nbspto&nbspGO&nbspto&nbspthe&nbspparty,&nbspmy&nbsphost<br>
-if&nbsp<b>sum</b>&nbsp<&nbsp&nbsp&nbsp0.5&nbsp&nbsp——&nbsp&nbspI'd&nbsplike&nbspto&nbsprecommend&nbspyou&nbspto&nbspSTAY&nbsphome,&nbspmy&nbsphost<br>
-
-</td>
-<td>&nbsp</td>
-</tr>
-</table>
-</center>
+So if our Sum is equal to or more than 0.5, then the machine says —— I'd like to recommend you to GO to the party, my host.
 <br><br>
-
-
+But else  (for example, if our Sum is equal to 0), then the machine says —— I'd like to recommend you to STAY home, my host.
+<br><br>
 As we can see, everything is easy!
 <br><br>
-If our sum is equal to or more than 0.5, then the machine says —— I'd like to recommend you to GO to the party, my host.
-<br><br>
-But else  (for example, if our sum is equal to 0), then the machine says —— I'd like to recommend you to STAY home, my host.
+So, according to our Main Formula, since our Sum is equal to 0.5, it means the Sum meets the condition that <b>If our Sum is equal to or more than 0.5</b> so the machine says: GO:
 
-<br><br>
-Since our sum is equal to 0.5 and, it means, the sum meets the condition that <b>If our sum is equal to or more than 0.5</b>, the machine will say: I'd like to recommend you  to GO to the party, my host.
 <br><br>
 <center>
 <img src="ai_full.png" width= "100%">
 </center>
 <br>
-Of course, when there are other Inputs then the recommendation may be completely other.
+Of course, when other Inputs happen to be there, in that case the recommendation may be completely other.
 <br><br>
-
 It is exactly the way how any AI works.
 <br><br>
 For now, you need to understand just some
 things.
 <br><br>
 <b>The 1st thing</b><br>
-There are some Inputs — some facts of life that may be converted (turned) into numbers — 1 or 0, for example.
+There are some Inputs — some facts of life converted into numbers — 1 or 0, for example.
 <br><br>
 <b>The 2nd thing</b><br>
-There are some Multipliers to multiply the Inputs by.
+There is some Multipliers — one Multiplier for each Input.
 <br><br>
 <b>The 3rd thing</b><br>
-There is some main Formula by which the machine makes its recommendation.
+There is some Sum that is calculated by multiplying each Input with its Multiplier and next summing all the Products.
 <br><br>
-As we can see, the machine loves to work with numbers.
+<b>The 4th thing</b><br>
+There is some Main Formula (using the Sum) by which the machine gives its recommendation.
 <br><br>
-For this reason, let's agree to consider the recommendation to GO as 1 and the recommendation to STAY as 0.
+
+Back to our AI.
+<!--
+Since machines love to work with numbers, it would be just convenient if each of its recommendations would be represented by some number.
+-->
 <br><br>
-So our first case:
+By the way, the recommendation to GO might be represented by 1 and the recommendation to STAY, by 0.
+<br><br>
+So the case that we have just examined:
 <br><br>
 <center>
 <img src="ai_full.png" width= "100%">
@@ -396,11 +488,273 @@ might look like this:
 <img src="case_1.png" height= "100%">
 </center>
 <br>
-
-As we can see, the recommendation of the machine is also called <b>Output</b>.
+Hopefully, you agree that it makes the representation of any Case both clear and short.
 <br><br>
+Also, pay attention that the recommendation of the machine may also be called Output.
+<br><br>
+
+So the fully completed table of <b>all possible Cases</b> according to your preferences look like this:
+<br><br>
+<center>
+<img src="table_allpr.png" height= "100%">
+</center>
+<br>
+Okay.
+<br><br>
+Now, if wanted, you can <b>manually</b> calculate each Case of 8 — using our Multipliers (0.5, 0.5, -0.5) and our Main Formula, getting various recommendations.
+<br><br>
+Just do it, if you want.
+<br><br>
+Okay.
+<br><br>
+Now, we're going to look at how our  Artificial Brain works and then we will dive in the code itself.
+<!--
+We're going to code this Artificial Brain.
+<br><br>
+Yes, let's code this Artificial Brain.
+-->
+<br><br>
+Just click the <b>Run</b> button being in the center of the top bar:
+<br><br>
+<center>
+<img src="run_py.png" height= 200px>
+</center>
+
+<iframe height="600px" width="100%" src="https://repl.it/@SweSd/BA?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<br><br>
+After you click the Run button, in the result — in the dark window — you will see the following text:
+<br><br>
+<b>Is there your best friend?</b>
+<br><br>
+Please just use <b>1</b> as <b>yes</b> and <b>0</b> as <b>no</b>.
+<br><br>
+For example, type <b>1</b> like this:
+<br><br>
+<img src="isthere.png" height= "70%">
+<br><br>
+and then press the Enter button on the keyboard.
+<br><br>
+And so on,  you may type all Inputs this way. 
+<br><br>
+Now again, if wanted, you can play around with our AI, feeding diverse Inputs — of the table of the all possible cases — to it and getting various recommendations.
+<br><br>
+<b>See Explainations to Code</b>
+<br><br>
+Okay.
+<br><br>
+As we can see, everthing is easy and our AI works well.
+<br><br>
+Let's make our AI even better.
+<br><br>
+In order to really make our AI better we can do 2 things.
+<br><br>
+<b>The 1st thing to make our AI better</b>
+<br><br>
+Since the Output of our Main Formula changes by a <b>jump</b>  — is either equal to 0 or equal to 1:
+<br><br>
+<center>
+<img src="jump_fun.png" height= 350px>
+</center>
+<br>
+this single fact, for some reasons, makes our AI less able to self-educating.
+<br><br>
+Indeed, having this Main Formula would make any AI less good to solving many of problems of the real world.
+<br><br>
+So, in reality, in the most cases, precisely this Main Formula is used:
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>1<br>
+MainFormula = —————<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 + 2.7<sup>&nbsp—&nbspSum</sup></b><br>
+<br>
+Or, if wanted, the same above formula may be represented either this way:
+<br><br>
+<b>MainFormula = 1 / (1 + 2.7<sup>&nbsp—&nbspSum</sup>)</b>
+<br><br>
+or this way:
+<br><br>
+<b>MainFormula = 1 / (1 + 2.7^(—&nbspSum))</b>
+<br><br>
+The chart of this Main Function looks this way:
+
+<br><br>
+<center>
+<img src="sigmoid_fun.png" height= 400px>
+</center>
+<br>
+Let’s consider how this Main Formula works for some specific Sums.
+<br><br>
+When Sum = 0<br>
+MainFormula = 1 / (1 + 2.7<sup> — 0</sup>)<br>
+Since 2.7<sup> — 0</sup> = 2.7<sup>0</sup> = 1 then:<br>
+MainFormula = 1 / (1 + 1) = 1 / 2 = 0.5<br>
+Exactly 0.5.<br>
+<br>
+When Sum = 6<br>
+MainFormula = 1 / (1 + 2.7<sup> — 6</sup>)<br>
+Since 2.7<sup> — 5</sup> ≈ 0.003 then:<br>
+MainFormula ≈ 1 / (1 + 0.003) ≈ 1 / 1.003 ≈ 0.997<br>
+Almost 1, a bit less than 1.<br>
+<br>
+When Sum = — 6<br>
+MainFormula = 1 / (1 + 2.7<sup> — (— 6)</sup> = 1 / (1 + 2.7<sup>6</sup>)<br>
+Since 2.7<sup>6</sup> ≈ 387 then:<br>
+MainFormula ≈ 1 / (1 + 387) ≈ 1 / 388 ≈ 0.003<br>
+Almost 0, a bit more than 0.<br>
+<br><br>
+
+The <b>2.7</b> in the Main Formula  represents the number <b>e</b>, known as Euler's number, approximately equal to 2.71828. So, actually, the Main Formula  may be represented this way:
+
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>1<br>
+MainFormula = —————————<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 + 2.71828<sup>&nbsp—&nbspSum</sup></b><br>
+<br>
+or this way:
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>1<br>
+MainFormula = —————————<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1 + e<sup>&nbsp—&nbspSum</sup></b><br>
+<br>
+So the 1st thing to make our AI better was to get the new Main Formula.
+<br><br>
+<b>The 2nd thing to make our AI better</b>
+<br><br>
+Working with Inputs, let's convert each <b>yes</b> into <b>3</b> and each <b>no</b> into <b>2</b>:
+<br><br>
+<center>
+<img src="32.png" height= 150px>
+</center>
+<br>
+Yes. It was easy!
+<br><br>
+The option with 1 and 0 was more bad since there was 0.
+<br><br>
+In reality, when <b>yes</b> is converted into 0 it makes process of self-educating for the AI sometimes impossible. 
+<br><br>
+For example, when at a party there isn't your best friend, there isn't your favorite cocktail and it isn't raining we expect from the AI that the recomendation will be to STAY home i.e. 0 (Case 7) -- but it will be impossible.
+<br><br>
+It will be impossible for our AI since when each of our Inputs is 0 the Multiplaers to these Inputs do not matter:<br>
+Input1 * Multiplier1 = 0 * Multiplier1 = 0<br>
+Input2 * Multiplier2 = 0 * Multiplier2 = 0<br>
+Input3 * Multiplier3 = 0 * Multiplier3 = 0<br>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+
+With 
+Чтобы данные можно было копировать -- таблица должна быть  в коде!!!
+<br><br>
+Now we should  CHANGE THE MAIN FORMULA IN THE CODE.
+<br><br>
+
+<br><br>
+<pre>
+
+ 
+import numpy as NiceTool
+ 
+Input1 = str(input("Is there your best friend?\n"))
+if Input1 == "yes":
+   friend = 1
+else:
+   friend = 0
+ 
+Input2 = str(input("Is there your favorite cocktail?\n"))
+if Input2 == "yes":
+   cocktail = 1
+else:
+   cocktail = 0
+ 
+Input3 = str(input("Is it raining now?\n"))
+if Input3 == "yes":
+   rain = 1
+else:
+   rain = 0
+ 
+Inputs = [friend, cocktail, rain]
+print("All our Inputs: ", (Inputs))
+ 
+Multipliers = [0.5, 0.5, -0.5]
+print("All our Multipliers: ", (Multipliers))
+ 
+Sum = NiceTool.dot(Inputs, Multipliers)
+print("Our Sum: ", Sum)
+ 
+print()
+print("THE ROBOT’s RECOMMENDATION: ")
+ 
+#   The Main Formula comes into play below:
+ 
+if Sum >= 0.5:
+    print("I'd like to recommend you to GO at the party, my host.")
+else:
+    print("I'd like to recommend you to STAY home, my host.")  
+
+
+</pre>
+<br><br>
+See Explainations to Code!
+<br><br>
+First of all, we're gonna have to import numpy as Nice_Tool.
+<br><br>
+<b>import numpy as Nice_Tool</b>
+<br><br>
+Then we'll define the Main Formula:
+<br><br>
+def Main_Formula(self, Sum):
+		if Sum >= 0.5:
+          return 1
+        else:
+          return 0
+<br><br>
+So we already have the following code:
+<br>
+<pre>
+<b>
+import numpy as Nice_Tool
+
+
+def Main_Formula(self, Sum):
+		if Sum >= 0.5:
+          return 1
+        else:
+          return 0
+</b>
+</pre>
+
+
+
+
+
+
+
+
+
+<br>
+Okay.
+<br><br>
+For other example, let's take the Case 2 that at a party there is your best friend, there isn't your favorite cocktail and it isn’t raining then we have the following:
+<br><br>
+bla
+<br><br>
+
+
 So, for example, BLA BLA BLA
 <br><br>
+
+
 You can play aroind with our AI giving it different Inputs in each case.
 <br><br>
 It is one of ways how AI can work.
