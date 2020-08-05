@@ -173,10 +173,7 @@ By the way, we practice <b>redundancy</b> throughout this book, using very simpl
 </center>
 <br>
 
-<% import time %>
-<%= time.strftime("%d:%m:%y",time.localtime(time.time())) %>
-
-
+<script src="https://gist.github.com/YouWizard/aec09a7a0ea188fedb7541598910e4fb.js"></script>
 
 
 
@@ -195,19 +192,19 @@ Things are changing fast.
 <img src="city1.png" width= 100%>
 </center>
 <br>
-Probably, we are going to a world where each person will have an augmented brain. Their human brain augmented with artificial (machine) brain.
+Probably, we are going to a world where people will have an augmented minds. A person will have their human mind augmented with artificial mind -- in other words, augmented with machine mind.
 <br><br>
-For now, indeed, we already have sort of an augmented brain. Since we can resort to the help of machines while thinking. For example, you can already augmente your brain with additional possibilities while doing calculations, using your smartphone, tablet or laptop.
+For now, in a way, we have already had sort of augmented minds. Since we can resort to the help of machines while thinking. For example, we can already augmente our Minds with additional possibilities while, for example, doing calculations by using calculators in our smartphones, tablets or laptops.
 <br><br>
-These were the first versions of Artificial Brains.
+Calculators were the first versions of Artificial Minds.
 <br><br>
-But we wanted more. 
+But people wanted more. 
 <br><br>
-So people now are able to build Artificial Intelligence that may be self-learning. 
+So people now are able to build Artificial Minds that may be self-learning. 
 <br><br>
-For now we can already create the AI which literally can on its own learn from facts of life and may be becoming better throughout this learning process without our participation. Only on its own.
+For now we can already create the Artificial Minds which literally can on its own learn from facts of life and may be becoming better throughout this learning process without our participation. Only on their own.
 <br><br>
-So only the Artificial Brain that can learn on its own is called AI now in the cases.
+So only Artificial Mind that can learn on its own is called the AI.
 <br><br>
 Likely, in the future, we will not even need to type something on the keyboard — for example, to type numbers for doing calculations —  since it will be enough for us to just think of it.
 <br><br>
@@ -295,15 +292,23 @@ It is easy.
 
 <fontHeading id = "FastStart"><center>Fast Start</center></fontHeading>
 <font0>
-Now we're going to build probably the simplest Neural Network that would provide you with its <b>recommendation</b> of either going to a party, or staying home.
+There are 2 sorts of activities any AI can do:<br>
+· be working -- be giving out its thoughts;<br>
+· be self-learning.<br>
+<br>
+We wll first take a look at how AI works -- at how exactly AI works.<br>
+<br>
+We're going to build probably the simplest AI -- the simplest Neural Network -- that would provide you with its <b>recommendation</b> of either going to a party, or staying home.
 <br><br>
 <center>
 <img src="party.png" width= "100%">
 </center>
 <br>
-First of all, we need to get an idea about how a Neural Network works.
+So, first of all, we need to get an idea about how a Neural Network works.
 <br><br>
-So, suppose that for some reasons, you have the following preferences about spontaneous parties:<br>
+Let's get started.
+<br><br>
+Suppose that for some reasons, you have the following preferences about spontaneous parties:<br>
 · you always go to a party if there is your best <b>friend</b> and it is not <b>raining</b> — regardless of whether there is your favorite <b>cocktail</b> or not:
 <br><br>
 <center>
@@ -519,7 +524,7 @@ Just do it, if you want.
 <br><br>
 Okay.
 <br><br>
-Now, we're going to look at how our  Artificial Brain works and then we will dive in the code itself.
+Now, we're going to look at how our AI works and then we will dive in the code itself.
 <!--
 We're going to code this Artificial Brain.
 <br><br>
@@ -766,6 +771,71 @@ For other example, let's take the Case 2 that at a party there is your best frie
 <br><br>
 bla
 <br><br>
+</font0>
+
+
+
+<fontHeading><center>The Way Computers See the World</center></fontHeading>
+<font0>
+
+
+
+People often say that computers love to work with numbers. It is true, computers love work with numbers.
+<br><br>
+But what exactly does it mean? How exactly computers work?
+<br><br>
+In reality, computers do not understand any numbers.
+<br><br>
+Everything a computer may understand is understand of if there is an electric current in some wire or not:
+<br><br>
+<center>
+<img src="is.png" height = 100px>
+</center>
+<br><br>
+ Only this thing.
+<br><br>
+<!--
+So, if there is an electric current in the wire the computer does one action and if not, the computer does other action. That is it.
+<br><br>
+-->
+The case when there is an electric current in the wire is called  <b>1</b> (one) by people and the case when there is not an electric current in the wire is called <b>0</b> (zero):
+<br><br>
+<center><b>
+101011000101</b>
+</center>
+<br>
+Any sort of information that a computer understands and, respectively, gets is the information of if there is an electric current in some wire or not.
+<br><br>
+For example, any visual information that a computer gets from a camera, in reality, is the understanding by the computer of how many times <b>during some time</b> there was an electric current in some wire and how many times <b>during the same time</b> there wasn't an electric current in the same wire:
+<br><br>
+<center>
+<img src="signal.png" height = 200px>
+</center>
+<center><b>
+0100010001111001111000010101010011111100010101001001</b>
+</center>
+<br>
+Each case when there was an electric current in the wire is called <b>1</b> (one) and each case when there wasn't an electric current in the wire is called <b>0</b> (zero).
+<br><br>
+So, only thanks to the way computers see the world, some information of sound that a computer is getting from, say, a microphone can have the following look:
+<br><br>
+<center>
+<img src="mic.png" height = 200px>
+</center>
+<center><b>
+101101001110000101010100111111000101010010011101010</b>
+</center>
+<br>
+For now, you need to undestand that just for this reason people say that computers see any information only  as  a chain (sequence) of zeros and ones.
+<br><br>
+For example, below here  is a representation of the way computers see diverse human activities:
+<br><br>
+<center>
+<img src="activities.png" height = 300px>
+</center>
+<br><br>
+
+
 
 
 So, for example, BLA BLA BLA
