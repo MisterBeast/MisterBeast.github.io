@@ -399,20 +399,20 @@ Next, the machine has to multiply each Input by an individual Multiplier:
 <center>
 <img src="multiplier_clear.png" height= 400px>
 </center>
-As we can see, the Multipliers are as follows:<br>
-Multiplier1 = &nbsp0.5<br>
-Multiplier2 = &nbsp0.5<br>
-Multiplier3 = -0.5<br>
+As we can see, the Multipliers are as follows:
+<br><br>
+<center>
+Multiplier1&nbsp=&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier2&nbsp=&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier3 =&nbsp-5<br></center>
 <br>
 So, we may get the Product1, Product2 and Product3:
 <br><br>
-Product1 = Input1 * Multiplier1 = 3 * 0.5 &nbsp&nbsp&nbsp&nbsp= &nbsp1.5<br>
-Product2 = Input2 * Multiplier2 = 2 * 0.5 &nbsp&nbsp&nbsp      = &nbsp1.0<br>
-Product3 = Input3 * Multiplier3 = 2 * (-0.5) = -1.0<br>
+Product1 = Input1 * Multiplier1 = 3 * 5 &nbsp&nbsp&nbsp&nbsp= &nbsp15<br>
+Product2 = Input2 * Multiplier2 = 2 * 5 &nbsp&nbsp&nbsp      = &nbsp10<br>
+Product3 = Input3 * Multiplier3 = 2 * (-5) = -10<br>
 <br>
-These Multipliers (0.5, 0.5, -0.5) are very important in working of our AI. 
+These Multipliers (5, 5, -5) are very important in working of our AI. 
 <br><br>
-These Multipliers (0.5, 0.5, -0.5) are very important since, as we will see further, precisely they do the whole work while making the recommendation.
+These Multipliers (5, 5, -5) are very important since, as we will see further, precisely they do the whole work while making the recommendation.
 <br><br>
 <!--
 So, each Input has its own Multiplier showing the size of the Input's contribution into the recommendation.
@@ -426,9 +426,9 @@ Calculating such Multipliers is THE challenge while building any AI.
 <br><br>
 Anyway, for educational purposes, let's suppose that we have already been given these Multipliers:
 <br>
-Multiplier1 = &nbsp0.5<br>
-Multiplier2 = &nbsp0.5<br>
-Multiplier3 = -0.5<br>
+Multiplier1 = &nbsp5<br>
+Multiplier2 = &nbsp5<br>
+Multiplier3 = -5<br>
 <br>
 Okay.
 <br><br>
@@ -443,27 +443,32 @@ Next, as we can see below, the machine sums all the Products:<br><br>
 <br>
 
 
-Sum = Product1 + Product2 + Product3 = 1.5 + 1.0 - 1.0 = 1.5
+Sum = Product1 + Product2 + Product3 = 15 + 10 - 10 = 15
 <br><br>
-So, <b>Sum</b> = 1.5.
+So, <b>Sum</b> = 15.
 <br><br>
-Next, the machine puts the Sum into a Main Formula that may look like this:
+Pay attention, when we say <b>Sum</b> we always imply precisely <b>Sum of our Products</b> — Product1 + Product2 + Product3, for example.
+<br><br>
+So, <b>Sum of our Products</b> — or <b>Sum</b> for short — equals 15.
+<br><br>
+
+Next, the machine puts our Sum into a <b>Main Formula</b>:
 <br><br>
 <center>
 <img src="ai_mf.png" height= "100%">
 </center>
 <br>
-So if our Sum is equal to or more than 1.5, then the machine says —— I'd like to recommend you to GO to the party, my host.
+So if our Sum is equal to or more than 15, then our Main Formula gives out <b>1</b> that can be converted by us into the phrase — I'd like to recommend you to GO to the party, my host.
 <br><br>
-But else  (for example, if our Sum is equal to 1), then the machine says —— I'd like to recommend you to STAY home, my host.
+But else  (for example, if our Sum is equal to 10), then the machine says — I'd like to recommend you to STAY home, my host.
 <br><br>
 As we can see, everything is easy!
 <br><br>
-So, according to our Main Formula, since our Sum is equal to 1.5, it means the Sum meets the condition that <b>If our Sum is equal to or more than 1.5</b> so the machine says: GO:
+So, according to our Main Formula, since our Sum is equal to 15, it means the Sum meets the condition that <b>If our Sum is equal to or more than 15</b> so the machine says: GO:
 
 <br><br>
 <center>
-<img src="ai_full.png" width= "100%">
+<img src="ai_full.png" width= "80%">
 </center>
 <br>
 Of course, when other Case happens to be there — when other Inputs happen to be there —  then the recommendation may be completely other.
@@ -474,16 +479,16 @@ For now, you need to understand just some
 things  —  just 4 things.
 <br><br>
 <b>The 1st thing</b><br>
-There are some Inputs — some facts of life converted into numbers — 1 or 0, for example.
+There are some Inputs — some facts of life converted into numbers — 3 or 2, for example.
 <br><br>
 <b>The 2nd thing</b><br>
-There is some Multipliers — one Multiplier for each Input.
+There is some Multipliers — one Multiplier for each Input — 5, 5, -5, for example.
 <br><br>
 <b>The 3rd thing</b><br>
-There is some Sum that is calculated by multiplying each Input with its Multiplier and next summing all the Products.
+There is some Sum that is calculated by multiplying each Input with its Multiplier and next summing all the Products — 15, for example.
 <br><br>
 <b>The 4th thing</b><br>
-There is some Main Formula (using the Sum) by which the machine gives its recommendation.
+There is some Main Formula (using the Sum) by which the machine gives its recommendation — 1, for example.
 <br><br>
 
 Back to our AI.
@@ -496,7 +501,7 @@ By the way, the recommendation to GO might be represented by 1 and the recommend
 So the case that we have just examined:
 <br><br>
 <center>
-<img src="ai_full.png" width= "100%">
+<img src="ai_full.png" width= "80%">
 </center>
 <br>
 might look like this:
