@@ -254,7 +254,7 @@ So we might say that a formula is a method of doing something.
 <br><br>
 Or, in our case, a formula is a method of calculating something.
 <br><br>
-Imagine that your State (the USA, UK, Canada or other one) gives you, as a present, some coins every day. During a month.
+Imagine that your State (the USA, UK, Canada or any other one) gives you, as a gift, some coins every day. During each month. Such a good state.
 <br><br>
 The number of coins you get every specific day is calculated with some formula.
 <br><br>
@@ -294,7 +294,7 @@ There are 2 sorts of activities any AI can do:<br>
 <br>
 We wll first take a look at how AI works -- at how exactly AI works.<br>
 <br>
-We're going to build probably the simplest AI -- the simplest Neural Network -- that would provide you with its <b>recommendation</b> of either going to a party, or staying home.
+We're going to build probably the simplest AI -- the simplest Neural Network -- that would provide you with its <b>recommendation</b> of either going to some specific party, or staying home.
 <br><br>
 <center>
 <img src="party.png" width= "100%">
@@ -451,22 +451,36 @@ So, <b>Sum of our Products</b> — or <b>Sum</b> for short — equals 15.
 Next, the machine puts our Sum into a <b>Main Formula</b>:
 <br><br>
 <center>
-<img src="ai_mf.png" height= "100%">
+<img src="ai_mf.png" width= "70%">
 </center>
 <br>
-So if our Sum is equal to or more than 15, then our Main Formula gives out <b>1</b> that can be converted by us into the phrase — I'd like to recommend you to GO to the party, my host.
+So if whenever our Sum is equal to or more than 15, then our Main Formula gives out <b>1</b>:
 <br><br>
-But else  (for example, if our Sum is equal to 10), then the machine says — I'd like to recommend you to STAY home, my host.
+<center>
+<img src="ai_mf_1.png" width= "70%">
+</center>
+<br>
+which can be converted by us into the phrase — I'd like to recommend you to GO to the party, my host; or <b>GO</b> for short.
+<br><br>
+But else  (for example, if whenever our Sum is equal to 10), then our Main Formula gives out <b>0</b>:
+<br><br>
+<center>
+<img src="ai_mf_0.png" width= "70%">
+</center>
+<br>
+which can be converted by us into the phrase — I'd like to recommend you to STAY home, my host; or <b>STAY</b> for short.
 <br><br>
 As we can see, everything is easy!
 <br><br>
-So, according to our Main Formula, since our Sum is equal to 15, it means the Sum meets the condition that <b>If our Sum is equal to or more than 15</b> so the machine says: GO:
+So, according to our Main Formula, since our Sum is equal to 15, it means the Sum meets the condition that <b>If our Sum is equal to or more than 15</b> so the machine gives out <b>1</b>:
 
 <br><br>
 <center>
 <img src="ai_full.png" width= "80%">
 </center>
 <br>
+which are converted by us into <b>GO</b>.
+<br><br>
 Of course, when other Case happens to be there — when other Inputs happen to be there —  then the recommendation may be completely other.
 <br><br>
 It is exactly the way how any AI works.
@@ -481,10 +495,10 @@ There are some Inputs — some facts of life converted into numbers — 3 or 2, 
 There is some Multipliers — one Multiplier for each Input — 5, 5, -5, for example.
 <br><br>
 <b>The 3rd thing</b><br>
-There is some Sum that is calculated by multiplying each Input with its Multiplier and next summing all the Products — 15, for example.
+There is some Sum of Products that is calculated by multiplying each Input with its own Multiplier and next summing all the Products — 15, for example.
 <br><br>
 <b>The 4th thing</b><br>
-There is some Main Formula (using the Sum) by which the machine gives its recommendation — 1, for example.
+There is some Main Formula (using the Sum) by which the machine gives its recommendation, either 1 or 0 — 1, for example.
 <br><br>
 
 Back to our AI.
@@ -492,7 +506,21 @@ Back to our AI.
 Since machines love to work with numbers, it would be just convenient if each of its recommendations would be represented by some number.
 -->
 <br><br>
-By the way, the recommendation to GO might be represented by 1 and the recommendation to STAY, by 0.
+What is a neuron in this system?  We can see that from the picture below:
+<br><br>
+<center>
+<img src="neuron.png" width= "80%">
+</center>
+<br>
+
+People call the orange field in the system an artificial neuron, or just <b>neuron</b> for short.
+<br><br>
+The number the Main Formula gives out -- <b>1</b> in our case -- is called <b>Output</b> of the neuron.
+<br><br>
+<!--
+Here we are watching the work the smallest Neural Network consisting of one neuron. More big Neural Networks are built on the princple when there
+-->
+
 <br><br>
 So the case that we have just examined:
 <br><br>
@@ -508,9 +536,6 @@ might look like this:
 <br>
 Hopefully, you agree that it makes the representation of any Case both clear and short.
 <br><br>
-Also, pay attention that the recommendation of the machine may also be called Output.
-<br><br>
-
 So the fully completed table of <b>all possible Cases</b> according to your preferences look like this:
 <br><br>
 <center>
@@ -519,7 +544,7 @@ So the fully completed table of <b>all possible Cases</b> according to your pref
 <br>
 Okay.
 <br><br>
-Now, if wanted, you can <b>manually</b> calculate each Case of 8 — using our Multipliers (0.5, 0.5, -0.5) and our Main Formula, getting various recommendations.
+Now, if wanted, you can <b>manually</b> calculate each Case of 8, using our Multipliers (5, 5, -5) and our Main Formula and getting various recommendations.
 <br><br>
 Just do it, if you want.
 <br><br>
@@ -544,9 +569,9 @@ After you click the Run button, in the result — in the dark window — you wil
 <br><br>
 <b>Is there your best friend?</b>
 <br><br>
-Please just use <b>1</b> as <b>yes</b> and <b>0</b> as <b>no</b>.
+Please just use <b>3</b> as <b>yes</b> and <b>2</b> as <b>no</b>.
 <br><br>
-For example, type <b>1</b> like this:
+For example, type <b>3</b> like this:
 <br><br>
 <img src="isthere.png" height= "70%">
 <br><br>
