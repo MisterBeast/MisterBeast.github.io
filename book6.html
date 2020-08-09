@@ -289,18 +289,20 @@ It is easy.
 <fontHeading id = "FastStart"><center>Fast Start</center></fontHeading>
 <font0>
 There are 2 sorts of activities any AI can do:<br>
-· be working -- be giving out its thoughts;<br>
+· be working — be giving out its thoughts;<br>
 · be self-learning.<br>
 <br>
-We wll first take a look at how AI works -- at how exactly AI works.<br>
-<br>
-We're going to build probably the simplest AI -- the simplest Neural Network -- that would provide you with its <b>recommendation</b> of either going to some specific party, or staying home.
+We will first take a look at how AI works.
+<br><br>
+We're going to build probably the simplest AI — the simplest Neural Network consisting of just one Neuron — that would provide you with its <b>recommendation</b> of either going to some specific party, or staying home.
 <br><br>
 <center>
 <img src="party.png" width= "100%">
 </center>
 <br>
-So, first of all, we need to get an idea about how a Neural Network works.
+If you do not know anything about Neurons it is absolutely okay and there is not any need to know something about them. At least, at this point.
+<br><br>
+So, first of all, we need to get a clear idea about how a mathematical Neuron works.
 <br><br>
 Let's get started.
 <br><br>
@@ -515,8 +517,11 @@ What is a neuron in this system?  We can see that from the picture below:
 
 People call the orange field in the system an artificial neuron, or just <b>neuron</b> for short.
 <br><br>
-The number the Main Formula gives out -- <b>1</b> in our case -- is called <b>Output</b> of the neuron.
+The number the Main Formula gives out — the number <b>1</b> in our case — is called <b>Output</b> of the neuron.
 <br><br>
+Any neuron first receives something and then gives out something. Always.
+<br><br>
+So our neuron first receives those Inputs — 3, 2, 2 — and then gives out its Output — the number <b>1</b>.  
 <!--
 Here we are watching the work the smallest Neural Network consisting of one neuron. More big Neural Networks are built on the princple when there
 -->
@@ -525,7 +530,7 @@ Here we are watching the work the smallest Neural Network consisting of one neur
 So the case that we have just examined:
 <br><br>
 <center>
-<img src="ai_full.png" width= "80%">
+<img src="neuron.png" width= "80%">
 </center>
 <br>
 might look like this:
@@ -536,21 +541,47 @@ might look like this:
 <br>
 Hopefully, you agree that it makes the representation of any Case both clear and short.
 <br><br>
+So we expect from our Neural Network that it will give out the following Output in each specific case:
+<br><br>
+<!--
 So the fully completed table of <b>all possible Cases</b> according to your preferences look like this:
 <br><br>
+-->
 <center>
 <img src="table_allpr.png" height= "100%">
 </center>
 <br>
 Okay.
 <br><br>
-Now, if wanted, you can <b>manually</b> calculate each Case of 8, using our Multipliers (5, 5, -5) and our Main Formula and getting various recommendations.
+Now, if wanted, you can <b>manually</b> calculate Output for each Case of 8 and you will see that our Neuron gives out those Outputs that we expect.
 <br><br>
 Just do it, if you want.
 <br><br>
 Okay.
 <br><br>
-Now, we're going to look at how our AI works and then we will dive in the code itself.
+So our Neuron gives out Outputs consistant with expected Outputs and
+it means our Neuron works absolutely well. 
+<br><br>
+Our Neuron works absolutely well only because we got these right Multipliers (5, 5, -5) from someone. We were given these Multipliers.
+<br><br>
+
+
+
+In real life, we should calculate these Multipliers on our own. And very soon we will.
+<br><br>
+
+<!--
+We used our simple Main Formula to see the way it works.
+
+
+Also, in real life, there are some number of Neurons.
+
+When we have some number Neurons it is called 
+Presicecly, calculating Multipliers is called Maching Learning.
+<br><br>
+-->
+
+Now, we're going to look at how our Neuron works in an automated way, diving in the code itself. It will be easy.
 <!--
 We're going to code this Artificial Brain.
 <br><br>
@@ -565,9 +596,10 @@ Just click the <b>Run</b> button being in the center of the top bar:
 
 <iframe height="600px" width="100%" src="https://repl.it/@SweSd/BA?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 <br><br>
-After you click the Run button, in the result — in the dark window — you will see the following text:
+After you click the Run button, in the result — in the lower dark window — you will see the following text:
 <br><br>
-<b>Is there your best friend?</b>
+<img src="isthere0.png" height= "70%">
+<br><br>
 <br><br>
 Please just use <b>3</b> as <b>yes</b> and <b>2</b> as <b>no</b>.
 <br><br>
@@ -577,8 +609,17 @@ For example, type <b>3</b> like this:
 <br><br>
 and then press the Enter button on the keyboard.
 <br><br>
-And so on,  you may type all Inputs this way. 
+And you will see this:
 <br><br>
+<img src="iscocktail.png" height= "70%">
+<br><br>
+
+
+you may type the rest of Inputs this way. 
+<br><br>
+You may always type all Inputs this way. 
+
+
 Now again, if wanted, you can play around with our AI, feeding diverse Inputs — of the table of the all possible cases — to it and getting various recommendations.
 <br><br>
 <b>See Explainations to Code</b>
