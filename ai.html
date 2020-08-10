@@ -164,7 +164,7 @@ text-align: left;
 <font0>
 We believe that the most hard thing in starting anything is to do the first step. We want to make this step being for you really easy. Totally!	
 <br><br>
-Hopefully, it is the first easily understandable book on Artificial Intelligence (AI) for all girls and boys age 8+. Also, of course, the best entry point for anyone more adult who wants to start understanding of AI.
+Hopefully, it is the first easily understandable book on Artificial Intelligence (AI) for all girls and boys age 8+. Also, of course, the best entry point for anyone more adult who wants to start understanding of AI and eventually to be capable to create super powerful AIs.
 <br><br>
 By the way, we practice <b>redundancy</b> throughout this book, using very simple words and explaining the same things several times.
 <br><br>
@@ -207,6 +207,75 @@ That's where everything is heading.
 
 </font0>
 
+
+<fontHeading><center>notes</center></fontHeading>
+<font0>
+<center>
+<img src="pixel.png" height = 100%>
+</center>
+<br>
+At the first step, we will look at the simplest case when all the 3 rectangle lamps act together: pic for a gray pixel.
+<br><br>
+Such one-color pixel may show 256 diffrent colors in a so-called crayscale way.
+<br><br>
+-- the absolut white color = 255:<br>
+<br><br>
+<center>
+<img src="abswhite.png" height = 100%>
+</center>
+<br>
+-- the absolut black color = 0:
+<br><br>
+<center>
+<img src="absblack.png" height = 100%>
+</center>
+<br>
+Plus, 254 colors representing 254 shades of gray. Really, 254 shades of gray = 1 to 254 inclusive:
+<br><br>
+<center>
+<img src="graypixel0.png" height = 100%>&nbsp
+<img src="graypixel.png" height = 100%>&nbsp
+<img src="graypixel3.png" height = 100%>
+</center>
+<br>
+<br><br>
+in the field of AI
+<br><br>
+Of course, Multipliers are just numbers. Just numbers like 3, 5, 0.7 or - 9, for example.
+<br><br>
+Just imagine for a second that the machine doesn't undestand what means Input1 equal to 5, what means Input2 equal to 3 and,  of course, what means Input3 equal to 3. The machine doesn't understand that it all is about partying. Absolutely.
+<br><br>
+Nevertheless, the machine easily calculates proper Multipliers. It is so because we first gave it our expected Outputs for different Cases.
+<br><br>
+This awesome conclusion opens up great prospects for building Neural Networks.
+
+<br><br>
+So, since a machine doesn't understand what it all is about — then while training — we can feed the machine any numbers about anything if we simultaneously give it our expected Outputs for different Cases.
+
+<br><br>
+For now, just let's notice this.
+
+<br><br>
+some function that squishes the real number line into the range between 0 & 1 and
+<br><br>
+Maybe you only want it to be active when the sum is bigger than say 10
+<br><br>
+<center>
+<img src="sigm.png" width = 100%>
+</center>
+<br>
+Organize all our Inputs from one layer into a row ( as a vector). from that layer of Inputs into a row of numbers arranged this way.
+And let's do the same with our Multipliers -- which are just some numbers (0.1, 0.1, -0.1).
+<br><br>
+<br><br>
+You literally should play around with that simple example of partying. To get the feel -- get a sense -- of how AI works with simple tasks. 
+<br><br>
+To get the feel -- get a sense -- of the elemantary elements of AI.
+<br><br>
+Since any more complicated task is just solved by compination of such elemantary elements.
+ <br><br>
+<br><br>
+</font0>
 
 <fontHeading><center>Our first goal</center></fontHeading>
 <font0>
@@ -286,48 +355,52 @@ It is easy.
 </font0>
 
 
+
+
+
+
+
+
+
+
 <fontHeading id = "FastStart"><center>Fast Start</center></fontHeading>
 <font0>
 There are 2 sorts of activities any AI can do:<br>
 · be working — be giving out its thoughts;<br>
 · be self-learning.<br>
 <br>
-We will first take a look at how AI works.
+We will first take a look at how AI is working.
 <br><br>
-We're going to build probably the simplest AI — the simplest Neural Network consisting of just one Neuron — that would provide you with its <b>recommendation</b> of either going to some specific party, or staying home.
+So we're going to build probably the simplest AI that would provide you with its <b>recommendation</b> of either going to some specific party, or staying home.
 <br><br>
 <center>
 <img src="party.png" width= "100%">
 </center>
 <br>
-If you do not know anything about Neurons it is absolutely okay and there is not any need to know something about them. At least, at this point.
-<br><br>
-So, first of all, we need to get a clear idea about how a mathematical Neuron works.
-<br><br>
 Let's get started.
 <br><br>
 Suppose that for some reasons, you have the following preferences about spontaneous parties:<br>
 · you always go to a party if there is your best <b>friend</b> and it is not <b>raining</b> — regardless of whether there is your favorite <b>cocktail</b> or not:
 <br><br>
 <center>
-<img src="friends_1.png" height= 150px><br>
-<img src="rain_0.png" height= 150px><br>
+<img src="friends_1.png" height= 150px>&nbsp
+<img src="rain_0.png" height= 150px>&nbsp
 <img src="cocktails_3.png" height= 150px>
 </center>
 <br>
 · you always go to a party if there is your favorite <b>cocktail</b> and it is not <b>raining</b> — regardless of whether there is your best <b>friend</b> or not:
 <br><br>
 <center>
-<img src="cocktails_1.png" height= 150px><br>
-<img src="rain_0.png" height= 150px><br>
+<img src="cocktails_1.png" height= 150px>&nbsp
+<img src="rain_0.png" height= 150px>&nbsp
 <img src="friends_3.png" height= 150px>
 </center>
 <br>
 · but if it is <b>raining</b> you always go to a party only if there are both your best <b>friend</b> and your favorite <b>cocktail</b>:
 <br><br>
 <center>
-<img src="rain_1.png" height= 150px><br>
-<img src="friends_1.png" height= 150px><br>
+<img src="rain_1.png" height= 150px>&nbsp
+<img src="friends_1.png" height= 150px>&nbsp
 <img src="cocktails_1.png" height= 150px>
 </center>
 <br>
@@ -335,31 +408,33 @@ Okay.
 <br><br>
 As we know, machines love to work with numbers.
 <br><br>
-For this reason, let's convert (turn) each <b>yes</b> into <b>3</b> and each <b>no</b> into <b>2</b>:
+For this reason, let's convert (turn) each <b>yes</b> into <b>5</b> and each <b>no</b> into <b>3</b>:
 <br><br>
 <center>
-<img src="32.png" height= 150px>
+<img src="53.png" height= 150px>
 </center>
 <br>
+Of course, this might be any 2 numbers instead of the <b>5</b> and <b>3</b> — for example, 1 and 2, 2 and 1, 3 and 7, and so on — but we, say at random or for some reason, have chosen the numbers <b>5</b> and <b>3</b>.
+<br><br>
+Okay.
+<br><br>
 
-
-
-So now what we are doing exactly is we:<br>
-· convert the fact that there is your best friend into <b>3</b> and the fact that there isn't your best friend into <b>2</b>:
+From now what we will do exactly is we will always:<br>
+· convert the fact that there is your best friend into <b>5</b> and the fact that there isn't your best friend into <b>3</b>:
 <br><br>
 <center>
 <img src="friends1.png" height= 150px><br>
 <img src="friends0.png" height= 150px>
 </center>
 <br>
-· convert the fact that there is your favorite cocktail into <b>3</b> and the fact that there isn't your favorite cocktail into <b>2</b>:
+· convert the fact that there is your favorite cocktail into <b>5</b> and the fact that there isn't your favorite cocktail into <b>3</b>:
 <br><br>
 <center>
 <img src="cocktails1.png" height= 150px><br>
 <img src="cocktails0.png" height= 150px>
 </center>
 <br>
-· convert  the fact that it is raining into <b>3</b> and the fact that there is no rain into <b>2</b>:
+· convert  the fact that it is raining into <b>5</b> and the fact that there is no rain into <b>3</b>:
 <br><br>
 <center>
 <img src="rain1.png" height= 150px><br>
@@ -368,27 +443,27 @@ So now what we are doing exactly is we:<br>
 <br>
 Easy!
 <br><br>
-So by this simple trick we made the computer able to understand your human life absolutely well. 
+So by this simple trick we made the computer capable to understand our human life absolutely well.
 <br><br>
 It is just great.
 <br><br>
 So, for example, if we know that at the party there <b>is</b> your best <b>friend</b>, there <b>isn't</b> your favorite <b>cocktail</b> and it <b>isn’t raining</b> then we get the following:
 <br><br>
 <center>
-<img src="friends1.png" height= 150px><br>
-<img src="cocktails0.png" height= 150px><br>
+<img src="friends1.png" height= 150px>&nbsp
+<img src="cocktails0.png" height= 150px>&nbsp
 <img src="rain0.png" height= 150px>
 </center>
 <br>
-In programming, such facts of life converted into numbers — either 3 or 2, for example — are called <b>Inputs</b>:
+In programming, such facts of life converted into numbers — either into 5 or into 2, for example — are called <b>Inputs</b>:
 <br><br>
 <center>
-<img src="case1.png" height= 400px>
+<img src="case1.png" height= 150px>
 </center>
 <br>
-Input1 = 3<br>
-Input2 = 2<br>
-Input3 = 2<br>
+Input1 = 5<br>
+Input2 = 5<br>
+Input3 = 5<br>
 <br>
 Okay.
 <br><br>
@@ -400,17 +475,17 @@ Next, the machine has to multiply each Input by an individual Multiplier:
 As we can see, the Multipliers are as follows:
 <br><br>
 <center>
-Multiplier1&nbsp=&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier2&nbsp=&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier3 =&nbsp-5<br></center>
+Multiplier1&nbsp=&nbsp0.1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier2&nbsp=&nbsp0.1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMultiplier3 =&nbsp-0.1<br></center>
 <br>
 So, we may get the Product1, Product2 and Product3:
 <br><br>
-Product1 = Input1 * Multiplier1 = 3 * 5 &nbsp&nbsp&nbsp&nbsp= &nbsp15<br>
-Product2 = Input2 * Multiplier2 = 2 * 5 &nbsp&nbsp&nbsp      = &nbsp10<br>
-Product3 = Input3 * Multiplier3 = 2 * (-5) = -10<br>
+Product1 = Input1 * Multiplier1 = 5 * 0.1 &nbsp&nbsp&nbsp&nbsp= &nbsp0.5<br>
+Product2 = Input2 * Multiplier2 = 3 * 0.1 &nbsp&nbsp&nbsp      = &nbsp0.3<br>
+Product3 = Input3 * Multiplier3 = 3 * (-0.1) = -0.3<br>
 <br>
-These Multipliers (5, 5, -5) are very important in working of our AI. 
+These Multipliers (0.1, 0.1, -0.1) are very important in work of our AI. 
 <br><br>
-These Multipliers (5, 5, -5) are very important since, as we will see further, precisely they do the whole work while making the recommendation.
+These Multipliers (0.1, 0.1, -0.1) are very important since, as we will see further, precisely they do the most work while making the recommendation.
 <br><br>
 <!--
 So, each Input has its own Multiplier showing the size of the Input's contribution into the recommendation.
@@ -418,15 +493,15 @@ So, each Input has its own Multiplier showing the size of the Input's contributi
 In other words, each Multiplier shows the degree of importance of the Input while making the recommendation. 
 <br><br>
 -->
-For educational purposes we got these Multipliers ready-made but in real life, <b>as we will see it</b>, calculating such Multipliers — one Multiplier for each Input  — is the most important task while building any AI.
+For educational purposes we got these Multipliers ready-made but in real life, <b>as we will see very soon</b>, calculating such Multipliers — one Multiplier for each Input  — is the most important task while building any AI.
 <br><br>
 Calculating such Multipliers is THE challenge while building any AI.
 <br><br>
 Anyway, for educational purposes, let's suppose that we have already been given these Multipliers:
 <br>
-Multiplier1 = &nbsp5<br>
-Multiplier2 = &nbsp5<br>
-Multiplier3 = -5<br>
+Multiplier1 = &nbsp0.1<br>
+Multiplier2 = &nbsp0.1<br>
+Multiplier3 = -0.1<br>
 <br>
 Okay.
 <br><br>
@@ -440,14 +515,21 @@ Next, as we can see below, the machine sums all the Products:<br><br>
 </center>
 <br>
 
-
-Sum = Product1 + Product2 + Product3 = 15 + 10 - 10 = 15
+Since:
 <br><br>
-So, <b>Sum</b> = 15.
+Product1 = &nbsp0.5<br>
+Product2 = &nbsp0.3<br>
+Product3 = -0.3<br>
+<br>
+Then:
 <br><br>
-Pay attention, when we say <b>Sum</b> we always imply precisely <b>Sum of our Products</b> — Product1 + Product2 + Product3, for example.
+Sum = Product1 + Product2 + Product3 = 0.5 + 0.3 - 0.3 = 0.5
 <br><br>
-So, <b>Sum of our Products</b> — or <b>Sum</b> for short — equals 15.
+So, <b>Sum</b> = 0.5.
+<br><br>
+Pay attention, when we say <b>Sum</b> we always imply precisely <b>Sum of our Products</b> — for example, Product1 + Product2 + Product3.
+<br><br>
+So, <b>Sum of our Products</b> — or <b>Sum</b> for short — equals 0.5.
 <br><br>
 
 Next, the machine puts our Sum into a <b>Main Formula</b>:
@@ -456,7 +538,7 @@ Next, the machine puts our Sum into a <b>Main Formula</b>:
 <img src="ai_mf.png" width= "70%">
 </center>
 <br>
-So if whenever our Sum is equal to or more than 15, then our Main Formula gives out <b>1</b>:
+So if whenever our Sum is equal to or more than 0.5, then our Main Formula gives out <b>1</b>:
 <br><br>
 <center>
 <img src="ai_mf_1.png" width= "70%">
@@ -464,7 +546,7 @@ So if whenever our Sum is equal to or more than 15, then our Main Formula gives 
 <br>
 which can be converted by us into the phrase — I'd like to recommend you to GO to the party, my host; or <b>GO</b> for short.
 <br><br>
-But else  (for example, if whenever our Sum is equal to 10), then our Main Formula gives out <b>0</b>:
+But else  (for example, if whenever our Sum has been equal to 10), then our Main Formula gives out <b>0</b>:
 <br><br>
 <center>
 <img src="ai_mf_0.png" width= "70%">
@@ -474,7 +556,7 @@ which can be converted by us into the phrase — I'd like to recommend you to ST
 <br><br>
 As we can see, everything is easy!
 <br><br>
-So, according to our Main Formula, since our Sum is equal to 15, it means the Sum meets the condition that <b>If our Sum is equal to or more than 15</b> so the machine gives out <b>1</b>:
+So, according to our Main Formula, since our Sum is equal to 0.5, it means the Sum meets the condition that <b>If our Sum is equal to or more than 0.5</b> so the machine gives out <b>1</b>:
 
 <br><br>
 <center>
@@ -487,17 +569,16 @@ Of course, when other Case happens to be there — when other Inputs happen to b
 <br><br>
 It is exactly the way how any AI works.
 <br><br>
-For now, you need to understand just some
-things  —  just 4 things.
+For now, you need to understand just 4 things.
 <br><br>
 <b>The 1st thing</b><br>
-There are some Inputs — some facts of life converted into numbers — 3 or 2, for example.
+There are some Inputs — some facts of life converted into numbers — 5 or 3, for example.
 <br><br>
 <b>The 2nd thing</b><br>
-There is some Multipliers — one Multiplier for each Input — 5, 5, -5, for example.
+There is some Multipliers — one Multiplier for each Input — 0.1, 0.1, -0.1, for example.
 <br><br>
 <b>The 3rd thing</b><br>
-There is some Sum of Products that is calculated by multiplying each Input with its own Multiplier and next summing all the Products — 15, for example.
+There is some Sum of Products that is calculated by multiplying each Input with its own Multiplier and next summing all the Products — 0.5, for example.
 <br><br>
 <b>The 4th thing</b><br>
 There is some Main Formula (using the Sum) by which the machine gives its recommendation, either 1 or 0 — 1, for example.
@@ -514,14 +595,53 @@ What is a neuron in this system?  We can see that from the picture below:
 <img src="neuron.png" width= "80%">
 </center>
 <br>
-
 People call the orange field in the system an artificial neuron, or just <b>neuron</b> for short.
 <br><br>
+So our simplest AI — the simplest Neural Network -- consists of just one Neuron:
+<br><br>
+<center>
+<img src="neuron0.png" width= "50%">
+</center>
+<br>
+If you do not know anything about Neurons it is absolutely okay and there is not any need to know something about them.
+<br><br>
+<br><br>
+
+
+
+As we can see, our Neuron eats the following numbers: 5, 3, 3 and then shits out the number <b>1</b>:
+<br><br>
+<center>
+<img src="eats.png" height=400px>
+</center>
+<br>
+Similarly, any Neuron on Earth eats something (5, 3, 3 — for example) and then shits out something (<b>1</b> — for example).<br>
+<br>
+When a Neuron shits out a number more than some threshold number scientists say that the Neuron does fire here.
+<br><br>
+So everything you need to know about Neurons is that at some moment of time a Neuron is eating something in order then to shit out something.
+
+
+<br><br>
+<br><br>
+We will just use this word Neuron since it is very poular in AI. Very soon you will understand what it means
+<br><br>
+So, first of all, we will take a close look at how exactly a Neuron works in Machine Learning.
+<br><br>
+
+
+
+
+
+
+
+
+
 The number the Main Formula gives out — the number <b>1</b> in our case — is called <b>Output</b> of the neuron.
 <br><br>
 Any neuron first receives something and then gives out something. Always.
 <br><br>
-So our neuron first receives those Inputs — 3, 2, 2 — and then gives out its Output — the number <b>1</b>.  
+So our neuron first receives those Inputs — 5, 3, 3 — and then gives out its Output — the number <b>1</b>.  
 <!--
 Here we are watching the work the smallest Neural Network consisting of one neuron. More big Neural Networks are built on the princple when there
 -->
